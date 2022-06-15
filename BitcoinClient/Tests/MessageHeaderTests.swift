@@ -1,0 +1,32 @@
+import XCTest
+
+class MessageHeaderTests: XCTestCase {
+
+    func testInitFromData() throws {
+        let data = Data([
+            0xFA, 0xBF, 0xB5, 0xDA,
+            0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x65, 0x00, 0x00, 0x00,
+            0x35, 0x8D, 0x49, 0x32
+        ])
+
+        let header = MessageHeader(from: data)
+
+        XCTAssertEqual(header.magicNumber, 0xDAB5BFFA)
+        XCTAssertEqual(header.command, "version")
+        XCTAssertEqual(header.payloadSize, 101)
+        XCTAssertEqual(header.payloadChecksum, 0x32498D35)
+    }
+
+    func testToData() throws {
+        let header = MessageHeader(command: "version", payloadSize: 100, payloadChecksum: 0x37518C19)
+
+        XCTAssertEqual(header.data, Data([
+            0xF9, 0xBE, 0xB4, 0xD9,
+            0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x64, 0x00, 0x00, 0x00,
+            0x19, 0x8C, 0x51, 0x37
+        ]))
+    }
+
+}

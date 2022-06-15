@@ -1,0 +1,33 @@
+import XCTest
+import Network
+
+class NetworkAddressTests: XCTestCase {
+
+    func testInitFromInputStream() throws {
+        let data = Data([
+            0x0D, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x20, 0x8D
+        ])
+
+        let input = InputStream(data: data)
+        input.open(); defer { input.close() }
+
+        let networkAddress = NetworkAddress(from: input)
+
+        XCTAssertEqual(networkAddress.services, 1037)
+        XCTAssertEqual(networkAddress.address, IPv6Address.any)
+        XCTAssertEqual(networkAddress.port, 8333)
+    }
+
+    func testToData() throws {
+        let networkAddress = NetworkAddress()
+
+        XCTAssertEqual(networkAddress.data, Data([
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00
+        ]))
+    }
+
+}
