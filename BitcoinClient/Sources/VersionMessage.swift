@@ -14,7 +14,7 @@ struct VersionMessage {
     let blockHeight: Int32
     let relayTxs: Bool
 
-    init(protocolVersion: Int32, userAgent: String, timestamp: Date, nonce: UInt64) {
+    init(protocolVersion: Int32, timestamp: Date, nonce: UInt64, userAgent: String) {
         self.protocolVersion = protocolVersion
         self.services = 0
         self.timestamp = timestamp

@@ -29,7 +29,7 @@ struct CombinedStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            CombinedStatusView(combinedStatus: CombinedStatus(nodeStatus: NodeStatus(protocolVersion: 70016, userAgent: "/Satoshi:23.0.0/", blockHeight: 740597), mempoolStatus: MempoolStatus(blockHeight: 740597, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1)))
+            CombinedStatusView(combinedStatus: CombinedStatus(nodeStatus: NodeStatus(blockHeight: 740597, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016), mempoolStatus: MempoolStatus(blockHeight: 740597, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1)))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
         }
     }

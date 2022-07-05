@@ -21,9 +21,9 @@ struct NodeStatusView: View {
 
     func content(for family: WidgetFamily) -> some View {
         VStack(alignment: family == .systemSmall ? .trailing : .center) {
-            if let protocolVersion = nodeStatus.protocolVersion,
+            if let blockHeight = nodeStatus.blockHeight,
                let userAgent = nodeStatus.userAgent,
-               let blockHeight = nodeStatus.blockHeight {
+               let protocolVersion = nodeStatus.protocolVersion {
                 Text(String(blockHeight))
                     .font(family == .systemSmall ? .title : .largeTitle)
                     .foregroundColor(Color("AccentColor"))
@@ -45,9 +45,9 @@ struct NodeStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            NodeStatusView(nodeStatus: NodeStatus(protocolVersion: 70016, userAgent: "/Satoshi:23.0.0/", blockHeight: 740597))
+            NodeStatusView(nodeStatus: NodeStatus(blockHeight: 740597, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            NodeStatusView(nodeStatus: NodeStatus(protocolVersion: 70016, userAgent: "/Satoshi:22.99.0/", blockHeight: 740597))
+            NodeStatusView(nodeStatus: NodeStatus(blockHeight: 740597, userAgent: "/Satoshi:22.99.0/", protocolVersion: 70016))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
 
             NodeStatusView(nodeStatus: NodeStatus(error: .configurationRequired))

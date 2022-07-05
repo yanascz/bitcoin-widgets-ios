@@ -49,9 +49,9 @@ class VersionMessageTests: XCTestCase {
     func testToData() throws {
         let message = VersionMessage(
             protocolVersion: 70001,
-            userAgent: "/Satoshi:22.0.0/",
             timestamp: try Date("2022-06-13T15:36:19Z", strategy: .iso8601),
-            nonce: 0xDD9D202C3AB45713
+            nonce: 0xDD9D202C3AB45713,
+            userAgent: "/Satoshi:22.0.0/"
         )
 
         XCTAssertEqual(message.data, Data([
