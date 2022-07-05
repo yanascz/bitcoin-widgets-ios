@@ -32,6 +32,7 @@ struct NodeStatusView: View {
                     .font(.footnote)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.trailing)
+                    .padding(.trailing, family == .systemSmall ? 2 : 0)
             } else if let error = nodeStatus.error {
                 Text(error.rawValue)
                     .foregroundColor(Color.white)

@@ -51,7 +51,7 @@ struct MempoolStatusView: View {
                         .font(.footnote)
                         .foregroundColor(.white)
                 }
-            }
+            }.padding(.trailing, family == .systemSmall ? 2 : 0)
         }.padding()
     }
 
