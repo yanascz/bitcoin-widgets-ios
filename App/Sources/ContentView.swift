@@ -33,6 +33,10 @@ struct ContentView: View {
                     LabelLink("Issue tracking", url: "https://github.com/yanascz/bitcoin-widgets-ios/issues",
                         systemImage: "ladybug.fill")
                 }
+                Section(header: Text("Support").font(.title2)) {
+                    LabelLink("widgets@ln.yanas.cz", url: "lightning:widgets@ln.yanas.cz",
+                        systemImage: "bolt.fill")
+                }
             }.listStyle(.plain)
         }
     }
