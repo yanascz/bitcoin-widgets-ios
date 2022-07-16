@@ -20,5 +20,5 @@ If your node runs behind NAT, consider setting up a [reverse SSH tunnel](https:/
 
 ## Support
 
-If you find Bitcoin Widgets useful, please consider supporting its maintenance by sending some sats:  
-`bc1qw5my5x0yrsjer59f4dp0hfy9apjd5d98wqkey4`
+If you find Bitcoin Widgets useful, please consider supporting its maintenance by sending some sats to ⚡widgets@ln.yanas.cz.
+
