@@ -24,6 +24,14 @@ struct ContentView: View {
                     Label("Look up Bitcoin Widgets, then choose desired widget and size.", systemImage: "3.circle.fill")
                     Label("Tap Add Widget, then tap Done.", systemImage: "4.circle.fill")
                 }
+                if #available(iOSApplicationExtension 16.0, *) {
+                    Section(header: Text("Add to Lock Screen").font(.title2)) {
+                        Label("Touch and hold the Lock Screen until the Customize button appears at the bottom of the screen.", systemImage: "1.circle.fill")
+                        Label("Tap the Customize button, then tap the box above or below the time.", systemImage: "2.circle.fill")
+                        Label("Look up Bitcoin Widgets, then tap or drag the widgets you want to add.", systemImage: "3.circle.fill")
+                        Label("Close the widget popup, then tap Done.", systemImage: "4.circle.fill")
+                    }
+                }
                 Section(header: Text("Configure").font(.title2)) {
                     Label("Touch and hold a widget until menu appears, then tap Edit Widget.", systemImage: "1.circle.fill")
                     Label("Provide required properties, then tap anywhere when done.", systemImage: "2.circle.fill")

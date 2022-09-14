@@ -16,9 +16,9 @@ struct CombinedStatusView: View {
                 .padding(.trailing)
             HStack {
                 NodeStatusView(nodeStatus: combinedStatus.nodeStatus)
-                    .content(for: .systemSmall)
+                    .systemView(for: .systemSmall)
                 MempoolStatusView(mempoolStatus: combinedStatus.mempoolStatus)
-                    .content(for: .systemSmall)
+                    .systemView(for: .systemSmall)
             }
         }
     }
@@ -29,7 +29,7 @@ struct CombinedStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            CombinedStatusView(combinedStatus: CombinedStatus(nodeStatus: NodeStatus(blockHeight: 740597, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016), mempoolStatus: MempoolStatus(blockHeight: 740597, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1)))
+            CombinedStatusView(combinedStatus: CombinedStatus(nodeStatus: NodeStatus(blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016), mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1)))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
         }
     }
