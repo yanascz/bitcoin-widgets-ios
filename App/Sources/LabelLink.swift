@@ -17,7 +17,7 @@ struct LabelLink: View {
             HStack {
                 Link(titleKey, destination: destination)
                 Spacer()
-                Image(systemName: "chevron.right")
+                Image(systemName: "link")
                     .foregroundColor(.secondary)
             }
         } icon: {
