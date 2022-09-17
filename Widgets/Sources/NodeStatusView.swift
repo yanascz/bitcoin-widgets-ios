@@ -41,9 +41,9 @@ struct NodeStatusView: View {
                 }
             } else if let error = nodeStatus.error {
                 if family == .accessoryInline {
-                    Label(error.rawValue, systemImage: "exclamationmark.triangle.fill")
+                    Label(error.localizedDescription, systemImage: "exclamationmark.triangle.fill")
                 } else {
-                    Text(error.rawValue)
+                    Text(error.localizedDescription)
                 }
             }
         }
@@ -64,7 +64,7 @@ struct NodeStatusView: View {
                     .multilineTextAlignment(.trailing)
                     .padding(.trailing, family == .systemSmall ? 2 : 0)
             } else if let error = nodeStatus.error {
-                Text(error.rawValue)
+                Text(error.localizedDescription)
                     .foregroundColor(Color.white)
             }
         }.padding()

@@ -17,8 +17,8 @@ struct MempoolStatusWidget: Widget {
         StaticConfiguration(kind: "cz.yanas.bitcoin.MempoolStatusWidget", provider: MempoolStatusProvider()) { entry in
             MempoolStatusView(mempoolStatus: entry)
         }
-        .configurationDisplayName("Mempool Status")
-        .description("See status of mempool.space Bitcoin explorer.")
+        .configurationDisplayName("MempoolStatusWidget.displayName")
+        .description("MempoolStatusWidget.description")
         .supportedFamilies(supportedFamilies)
     }
 

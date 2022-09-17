@@ -17,8 +17,8 @@ struct NodeStatusWidget: Widget {
         IntentConfiguration(kind: "cz.yanas.bitcoin.NodeStatusWidget", intent: ConfigurationIntent.self, provider: NodeStatusProvider()) { entry in
             NodeStatusView(nodeStatus: entry)
         }
-        .configurationDisplayName("Node Status")
-        .description("See status of your full node.")
+        .configurationDisplayName("NodeStatusWidget.displayName")
+        .description("NodeStatusWidget.description")
         .supportedFamilies(supportedFamilies)
     }
 

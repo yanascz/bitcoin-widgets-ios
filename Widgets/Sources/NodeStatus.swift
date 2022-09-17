@@ -1,5 +1,6 @@
 import Foundation
 import WidgetKit
+import SwiftUI
 
 struct NodeStatus: TimelineEntry {
 
@@ -24,8 +25,14 @@ struct NodeStatus: TimelineEntry {
     }
 
     enum Error: String {
-        case configurationRequired = "Configuration required"
-        case nodeUnreachable = "Node unreachable"
+
+        case configurationRequired
+        case nodeUnreachable
+
+        var localizedDescription: LocalizedStringKey {
+            return LocalizedStringKey("NodeStatus.Error." + self.rawValue);
+        }
+
     }
 
 }

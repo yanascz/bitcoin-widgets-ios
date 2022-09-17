@@ -79,7 +79,7 @@ struct MempoolStatusView: View {
                         .foregroundColor(.white)
                 }
                 HStack {
-                    Text("minimum")
+                    Text("MempoolStatusView.minimumFee")
                         .font(.footnote)
                         .foregroundColor(.gray)
                     Text(String(mempoolStatus.minimumFee))
