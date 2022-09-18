@@ -6,7 +6,7 @@ struct MempoolStatusProvider: TimelineProvider {
     private let mempoolClient = MempoolClient()
 
     func placeholder(in context: Context) -> MempoolStatus {
-        return MempoolStatus(blockHeight: 754091, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1)
+        return MempoolStatus(blockHeight: 754637, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (MempoolStatus) -> ()) {
