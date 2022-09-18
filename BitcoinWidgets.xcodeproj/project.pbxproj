@@ -35,8 +35,6 @@
 		0D5D90102833CB35002A9C21 /* VersionMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BF528298BC400868897 /* VersionMessage.swift */; };
 		0D5D90122833E8AC002A9C21 /* MagicNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90112833E8AC002A9C21 /* MagicNumber.swift */; };
 		0D5D90132833E8BE002A9C21 /* MagicNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90112833E8AC002A9C21 /* MagicNumber.swift */; };
-		0D622C0E28D638500062B588 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D622C0D28D638500062B588 /* Localizable.strings */; };
-		0D622C1028D6387C0062B588 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D622C0F28D6387C0062B588 /* Localizable.strings */; };
 		0D960BA52829888700868897 /* BitcoinWidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */; };
 		0D960BA72829888700868897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA62829888700868897 /* ContentView.swift */; };
 		0D960BA92829888800868897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
@@ -44,8 +42,6 @@
 		0D960BD52829891800868897 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D960BD42829891800868897 /* WidgetKit.framework */; };
 		0D960BD72829891800868897 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D960BD62829891800868897 /* SwiftUI.framework */; };
 		0D960BDD2829891900868897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BDC2829891900868897 /* Assets.xcassets */; };
-		0D960BDF2829891900868897 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BDB2829891800868897 /* Configuration.intentdefinition */; };
-		0D960BE02829891900868897 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BDB2829891800868897 /* Configuration.intentdefinition */; };
 		0D960BE32829891900868897 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D960BD22829891800868897 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0D960BED28298B3600868897 /* NodeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BE928298B3600868897 /* NodeStatus.swift */; };
 		0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BEA28298B3600868897 /* NodeStatusProvider.swift */; };
@@ -57,6 +53,10 @@
 		0D960BF928298BC400868897 /* VersionMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BF528298BC400868897 /* VersionMessage.swift */; };
 		0D960BFC28298C1F00868897 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFA28298C1F00868897 /* InputStream.swift */; };
 		0D960BFD28298C1F00868897 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFB28298C1F00868897 /* Data.swift */; };
+		0DAC68E428D6EBD4001930BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC68E628D6EBD4001930BC /* Localizable.strings */; };
+		0DAC68E828D6F39F001930BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC68EA28D6F39F001930BC /* Localizable.strings */; };
+		0DB68DD828D72FD500073E09 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */; };
+		0DB68DE028D731A100073E09 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */; };
 		0DC54974283B971B000D9994 /* MempoolStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C239283B9378007B3F1B /* MempoolStatus.swift */; };
 		0DC54975283B972A000D9994 /* MempoolStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C238283B9378007B3F1B /* MempoolStatusProvider.swift */; };
 		0DC54976283B9744000D9994 /* MempoolStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C23A283B9378007B3F1B /* MempoolStatusView.swift */; };
@@ -125,8 +125,6 @@
 		0D5D900B2833C750002A9C21 /* NetworkAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAddressTests.swift; sourceTree = "<group>"; };
 		0D5D900E2833CAEE002A9C21 /* VersionMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionMessageTests.swift; sourceTree = "<group>"; };
 		0D5D90112833E8AC002A9C21 /* MagicNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicNumber.swift; sourceTree = "<group>"; };
-		0D622C0D28D638500062B588 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0D622C0F28D6387C0062B588 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0D960BA12829888700868897 /* BitcoinWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWidgetsApp.swift; sourceTree = "<group>"; };
 		0D960BA62829888700868897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		0D960BD22829891800868897 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D960BD42829891800868897 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0D960BD62829891800868897 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		0D960BDB2829891800868897 /* Configuration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Configuration.intentdefinition; sourceTree = "<group>"; };
 		0D960BDC2829891900868897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D960BDE2829891900868897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D960BE928298B3600868897 /* NodeStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeStatus.swift; sourceTree = "<group>"; };
@@ -150,6 +147,12 @@
 		0D960BFA28298C1F00868897 /* InputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
 		0D960BFB28298C1F00868897 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		0D960BFE28298DE700868897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAC68E528D6EBD4001930BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0DAC68E728D6EFF9001930BC /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0DAC68E928D6F39F001930BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0DAC68EB28D6F3BB001930BC /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0DB68DD928D72FD500073E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Configuration.intentdefinition; sourceTree = "<group>"; };
+		0DB68DDF28D7316E00073E09 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Configuration.strings; sourceTree = "<group>"; };
 		0DE9C22E283B8A54007B3F1B /* BitcoinClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinClientTests.swift; sourceTree = "<group>"; };
 		0DE9C232283B91BB007B3F1B /* BitcoinWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWidgets.swift; sourceTree = "<group>"; };
 		0DE9C236283B9237007B3F1B /* MempoolStatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolStatusWidget.swift; sourceTree = "<group>"; };
@@ -248,7 +251,7 @@
 				0DEFB2C12855FF1F009AF82D /* Sources */,
 				0D960BA82829888800868897 /* Assets.xcassets */,
 				0D960BFE28298DE700868897 /* Info.plist */,
-				0D622C0D28D638500062B588 /* Localizable.strings */,
+				0DAC68EA28D6F39F001930BC /* Localizable.strings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -266,10 +269,10 @@
 			isa = PBXGroup;
 			children = (
 				0DEFB2C928560002009AF82D /* Sources */,
-				0D960BDB2829891800868897 /* Configuration.intentdefinition */,
+				0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */,
 				0D960BDC2829891900868897 /* Assets.xcassets */,
 				0D960BDE2829891900868897 /* Info.plist */,
-				0D622C0F28D6387C0062B588 /* Localizable.strings */,
+				0DAC68E628D6EBD4001930BC /* Localizable.strings */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -474,8 +477,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				cs,
 			);
 			mainGroup = 0D960B982829888700868897;
 			packageReferences = (
@@ -497,7 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D960BA92829888800868897 /* Assets.xcassets in Resources */,
-				0D622C0E28D638500062B588 /* Localizable.strings in Resources */,
+				0DAC68E828D6F39F001930BC /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4B8D1F285A02D8006ECD80 /* Assets.xcassets in Resources */,
-				0D622C1028D6387C0062B588 /* Localizable.strings in Resources */,
+				0DAC68E428D6EBD4001930BC /* Localizable.strings in Resources */,
 				0D960BDD2829891900868897 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,8 +531,8 @@
 			files = (
 				0DEFB2CF285731BB009AF82D /* LabelLink.swift in Sources */,
 				0D960BA72829888700868897 /* ContentView.swift in Sources */,
-				0D960BE02829891900868897 /* Configuration.intentdefinition in Sources */,
 				0D960BA52829888700868897 /* BitcoinWidgetsApp.swift in Sources */,
+				0DB68DE028D731A100073E09 /* Configuration.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +585,7 @@
 				0D1BAC96283EC5BD00F3DC08 /* CombinedStatusProvider.swift in Sources */,
 				0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */,
 				0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */,
-				0D960BDF2829891900868897 /* Configuration.intentdefinition in Sources */,
+				0DB68DD828D72FD500073E09 /* Configuration.intentdefinition in Sources */,
 				0D960BF828298BC400868897 /* BitcoinClient.swift in Sources */,
 				0D960BED28298B3600868897 /* NodeStatus.swift in Sources */,
 				0D960BFD28298C1F00868897 /* Data.swift in Sources */,
@@ -614,11 +618,42 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		0DAC68E628D6EBD4001930BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DAC68E528D6EBD4001930BC /* en */,
+				0DAC68E728D6EFF9001930BC /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0DAC68EA28D6F39F001930BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DAC68E928D6F39F001930BC /* en */,
+				0DAC68EB28D6F3BB001930BC /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DB68DD928D72FD500073E09 /* Base */,
+				0DB68DDF28D7316E00073E09 /* cs */,
+			);
+			name = Configuration.intentdefinition;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		0D960BC32829888800868897 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -679,6 +714,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -756,7 +792,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.yanas.BitcoinWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -789,7 +825,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.yanas.BitcoinWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -859,7 +895,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -889,7 +925,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

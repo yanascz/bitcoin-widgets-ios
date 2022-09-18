@@ -1,0 +1,12 @@
+"NodeStatus.Error.configurationRequired" = "Proveďte konfiguraci";
+"NodeStatus.Error.nodeUnreachable" = "Uzel je nedostupný";
+
+"NodeStatusWidget.displayName" = "Stav uzlu";
+"NodeStatusWidget.description" = "Sledujte stav svého Bitcoinového uzlu.";
+
+"MempoolStatusWidget.displayName" = "Stav mempool.space";
+"MempoolStatusWidget.description" = "Sledujte stav Bitcoinového prohlížeče mempool.space.";
+"MempoolStatusView.minimumFee" = "minimum";
+
+"CombinedStatusWidget.displayName" = "Kombinovaný stav";
+"CombinedStatusWidget.description" = "Sledujte stav svého Bitcoinového uzlu a prohlížeče mempool.space.";
