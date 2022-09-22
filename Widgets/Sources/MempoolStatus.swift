@@ -8,6 +8,7 @@ struct MempoolStatus: TimelineEntry {
     let fastestFee: Int
     let halfHourFee: Int
     let hourFee: Int
+    let economyFee: Int
     let minimumFee: Int
 
 }

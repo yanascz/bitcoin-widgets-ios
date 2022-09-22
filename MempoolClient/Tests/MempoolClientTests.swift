@@ -6,7 +6,7 @@ class MempoolClientTests: XCTestCase {
         let client = MempoolClient()
         let blockHeight = try await client.getBlockHeight()
 
-        XCTAssertGreaterThanOrEqual(blockHeight, 740597)
+        XCTAssertGreaterThanOrEqual(blockHeight, 755237)
     }
 
     func testGetRecommendedFees() async throws {
@@ -16,6 +16,7 @@ class MempoolClientTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(recommendedFees.fastestFee, 1)
         XCTAssertGreaterThanOrEqual(recommendedFees.halfHourFee, 1)
         XCTAssertGreaterThanOrEqual(recommendedFees.hourFee, 1)
+        XCTAssertGreaterThanOrEqual(recommendedFees.economyFee, 1)
         XCTAssertGreaterThanOrEqual(recommendedFees.minimumFee, 1)
     }
 

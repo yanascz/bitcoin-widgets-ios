@@ -32,7 +32,7 @@ struct MempoolStatusView: View {
                 Text(String(mempoolStatus.blockHeight))
                     .font(.system(size: 37))
                 HStack {
-                    Text(String(mempoolStatus.minimumFee))
+                    Text(String(mempoolStatus.economyFee))
                         .font(.footnote)
                     Text("/")
                         .font(.footnote)
@@ -62,6 +62,12 @@ struct MempoolStatusView: View {
                 .padding(.bottom, 1)
             VStack(alignment: .trailing) {
                 HStack {
+                    Text(String(mempoolStatus.economyFee))
+                        .font(.footnote)
+                        .foregroundColor(.white)
+                    Text("/")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
                     Text(String(mempoolStatus.hourFee))
                         .font(.footnote)
                         .foregroundColor(.white)
@@ -96,22 +102,23 @@ struct MempoolStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1))
+            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 1, halfHourFee: 1, hourFee: 1, minimumFee: 1))
+
+            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 2791, halfHourFee: 730, hourFee: 130, minimumFee: 19))
+            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
 
             if #available(iOSApplicationExtension 16.0, *) {
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 1, halfHourFee: 1, hourFee: 1, minimumFee: 1))
+                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 7, halfHourFee: 3, hourFee: 1, minimumFee: 1))
+                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 2791, halfHourFee: 730, hourFee: 130, minimumFee: 19))
+                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
 
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 754091, fastestFee: 2791, halfHourFee: 730, hourFee: 130, minimumFee: 19))
+                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
             }
         }
