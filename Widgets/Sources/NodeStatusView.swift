@@ -12,12 +12,7 @@ struct NodeStatusView: View {
             accessoryView(for: family)
         } else {
             ZStack {
-                Color("WidgetBackground")
-                Image("Bitcoin")
-                    .resizable()
-                    .opacity(0.07)
-                    .aspectRatio(contentMode: family == .systemSmall ? .fit : .fill)
-                    .padding(family == .systemSmall ? .all : .trailing)
+                BitcoinBackground(family: family)
                 systemView(for: family)
             }
         }
@@ -58,10 +53,11 @@ struct NodeStatusView: View {
                     .font(family == .systemSmall ? .title : .largeTitle)
                     .foregroundColor(Color("AccentColor"))
                     .padding(.bottom, 1)
-                Text("\(userAgent)\n(\(String(protocolVersion)))")
-                    .font(.footnote)
-                    .foregroundColor(Color.gray)
-                    .multilineTextAlignment(.trailing)
+                VStack(alignment: .trailing) {
+                    Text(userAgent)
+                    Text("(\(String(protocolVersion)))")
+                }.font(family == .systemSmall ? .footnote : .body)
+                    .foregroundColor(.gray)
                     .padding(.trailing, family == .systemSmall ? 2 : 0)
             } else if let error = nodeStatus.error {
                 Text(error.localizedDescription)

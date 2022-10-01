@@ -8,12 +8,7 @@ struct CombinedStatusView: View {
 
     var body: some View {
         ZStack {
-            Color("WidgetBackground")
-            Image("Bitcoin")
-                .resizable()
-                .scaledToFill()
-                .opacity(0.07)
-                .padding(.trailing)
+            BitcoinBackground(family: .systemLarge)
             HStack {
                 NodeStatusView(nodeStatus: combinedStatus.nodeStatus)
                     .systemView(for: .systemSmall)

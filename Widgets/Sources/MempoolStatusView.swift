@@ -12,12 +12,7 @@ struct MempoolStatusView: View {
             accessoryView(for: family)
         } else {
             ZStack {
-                Color("WidgetBackground")
-                Image("Bitcoin")
-                    .resizable()
-                    .opacity(0.07)
-                    .aspectRatio(contentMode: family == .systemSmall ? .fit : .fill)
-                    .padding(family == .systemSmall ? .all : .trailing)
+                BitcoinBackground(family: family)
                 systemView(for: family)
             }
         }
@@ -33,23 +28,16 @@ struct MempoolStatusView: View {
                     .font(.system(size: 37))
                 HStack {
                     Text(String(mempoolStatus.economyFee))
-                        .font(.footnote)
                     Text("/")
-                        .font(.footnote)
                         .foregroundColor(.secondary)
                     Text(String(mempoolStatus.hourFee))
-                        .font(.footnote)
                     Text("/")
-                        .font(.footnote)
                         .foregroundColor(.secondary)
                     Text(String(mempoolStatus.halfHourFee))
-                        .font(.footnote)
                     Text("/")
-                        .font(.footnote)
                         .foregroundColor(.secondary)
                     Text(String(mempoolStatus.fastestFee))
-                        .font(.footnote)
-                }.padding(.trailing, 2)
+                }.font(.footnote).padding(.trailing, 2)
             }
         }
     }
@@ -63,36 +51,28 @@ struct MempoolStatusView: View {
             VStack(alignment: .trailing) {
                 HStack {
                     Text(String(mempoolStatus.economyFee))
-                        .font(.footnote)
                         .foregroundColor(.white)
                     Text("/")
-                        .font(.footnote)
                         .foregroundColor(.gray)
                     Text(String(mempoolStatus.hourFee))
-                        .font(.footnote)
                         .foregroundColor(.white)
                     Text("/")
-                        .font(.footnote)
                         .foregroundColor(.gray)
                     Text(String(mempoolStatus.halfHourFee))
-                        .font(.footnote)
                         .foregroundColor(.white)
                     Text("/")
-                        .font(.footnote)
                         .foregroundColor(.gray)
                     Text(String(mempoolStatus.fastestFee))
-                        .font(.footnote)
                         .foregroundColor(.white)
                 }
                 HStack {
                     Text("MempoolStatusView.minimumFee")
-                        .font(.footnote)
                         .foregroundColor(.gray)
                     Text(String(mempoolStatus.minimumFee))
-                        .font(.footnote)
                         .foregroundColor(.white)
                 }
-            }.padding(.trailing, family == .systemSmall ? 2 : 0)
+            }.font(family == .systemSmall ? .footnote : .body)
+                .padding(.trailing, family == .systemSmall ? 2 : 0)
         }.padding()
     }
 

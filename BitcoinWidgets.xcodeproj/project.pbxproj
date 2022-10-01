@@ -35,6 +35,7 @@
 		0D5D90102833CB35002A9C21 /* VersionMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BF528298BC400868897 /* VersionMessage.swift */; };
 		0D5D90122833E8AC002A9C21 /* MagicNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90112833E8AC002A9C21 /* MagicNumber.swift */; };
 		0D5D90132833E8BE002A9C21 /* MagicNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90112833E8AC002A9C21 /* MagicNumber.swift */; };
+		0D75326728E8822800776552 /* BitcoinBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75326628E8822800776552 /* BitcoinBackground.swift */; };
 		0D960BA52829888700868897 /* BitcoinWidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */; };
 		0D960BA72829888700868897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA62829888700868897 /* ContentView.swift */; };
 		0D960BA92829888800868897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
@@ -125,6 +126,7 @@
 		0D5D900B2833C750002A9C21 /* NetworkAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAddressTests.swift; sourceTree = "<group>"; };
 		0D5D900E2833CAEE002A9C21 /* VersionMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionMessageTests.swift; sourceTree = "<group>"; };
 		0D5D90112833E8AC002A9C21 /* MagicNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicNumber.swift; sourceTree = "<group>"; };
+		0D75326628E8822800776552 /* BitcoinBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinBackground.swift; sourceTree = "<group>"; };
 		0D960BA12829888700868897 /* BitcoinWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWidgetsApp.swift; sourceTree = "<group>"; };
 		0D960BA62829888700868897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 		0DEFB2C928560002009AF82D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0D75326628E8822800776552 /* BitcoinBackground.swift */,
 				0DE9C232283B91BB007B3F1B /* BitcoinWidgets.swift */,
 				0D1BAC90283EC49400F3DC08 /* CombinedStatus.swift */,
 				0D1BAC94283EC5B100F3DC08 /* CombinedStatusProvider.swift */,
@@ -586,6 +589,7 @@
 				0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */,
 				0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */,
 				0DB68DD828D72FD500073E09 /* Configuration.intentdefinition in Sources */,
+				0D75326728E8822800776552 /* BitcoinBackground.swift in Sources */,
 				0D960BF828298BC400868897 /* BitcoinClient.swift in Sources */,
 				0D960BED28298B3600868897 /* NodeStatus.swift in Sources */,
 				0D960BFD28298C1F00868897 /* Data.swift in Sources */,
