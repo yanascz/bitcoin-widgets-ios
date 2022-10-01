@@ -10,3 +10,6 @@
 
 "CombinedStatusWidget.displayName" = "Combined Status";
 "CombinedStatusWidget.description" = "See status of your full node and mempool.space Bitcoin explorer.";
+
+"MoscowTimeWidget.displayName" = "Moscow Time";
+"MoscowTimeWidget.description" = "See current Moscow Time for selected currencies.";

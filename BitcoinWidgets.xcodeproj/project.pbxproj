@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0F0A2628E88D9B0051AABC /* MoscowTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */; };
+		0D0F0A2728E891180051AABC /* BlockchainClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005E828E88CAD008A8CDD /* BlockchainClientTests.swift */; };
+		0D0F0A2828E8912A0051AABC /* BlockchainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */; };
+		0D0F0A2928E8912A0051AABC /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EB28E88CAD008A8CDD /* Ticker.swift */; };
 		0D1BAC8B283E1EB600F3DC08 /* MempoolClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC89283E1E4F00F3DC08 /* MempoolClientTests.swift */; };
 		0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC84283E105300F3DC08 /* MempoolClient.swift */; };
 		0D1BAC8D283E1EC600F3DC08 /* MempoolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC84283E105300F3DC08 /* MempoolClient.swift */; };
@@ -23,6 +27,12 @@
 		0D1BACA72844D6FB00F3DC08 /* CheckNodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BACA52844D6FB00F3DC08 /* CheckNodeResponse.swift */; };
 		0D1BACA92844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BACA82844DC2E00F3DC08 /* NodeStatusResponse.swift */; };
 		0D1BACAA2844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BACA82844DC2E00F3DC08 /* NodeStatusResponse.swift */; };
+		0D3005ED28E88CAD008A8CDD /* BlockchainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */; };
+		0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EB28E88CAD008A8CDD /* Ticker.swift */; };
+		0D3005F328E88CDA008A8CDD /* MoscowTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EF28E88CD9008A8CDD /* MoscowTimeProvider.swift */; };
+		0D3005F428E88CDA008A8CDD /* MoscowTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F028E88CD9008A8CDD /* MoscowTimeView.swift */; };
+		0D3005F528E88CDA008A8CDD /* MoscowTimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F128E88CD9008A8CDD /* MoscowTimeWidget.swift */; };
+		0D3005F628E88CDA008A8CDD /* MoscowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F228E88CD9008A8CDD /* MoscowTime.swift */; };
 		0D43C0B128329C3E0002D25B /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BF328298BC400868897 /* MessageHeader.swift */; };
 		0D43C0B228329C580002D25B /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFA28298C1F00868897 /* InputStream.swift */; };
 		0D43C0B328329C580002D25B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFB28298C1F00868897 /* Data.swift */; };
@@ -109,6 +119,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowTimeFormatter.swift; sourceTree = "<group>"; };
 		0D1BAC84283E105300F3DC08 /* MempoolClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolClient.swift; sourceTree = "<group>"; };
 		0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedFees.swift; sourceTree = "<group>"; };
 		0D1BAC89283E1E4F00F3DC08 /* MempoolClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolClientTests.swift; sourceTree = "<group>"; };
@@ -120,6 +131,13 @@
 		0D1BACA12844D4FF00F3DC08 /* BitnodesClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitnodesClientTests.swift; sourceTree = "<group>"; };
 		0D1BACA52844D6FB00F3DC08 /* CheckNodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNodeResponse.swift; sourceTree = "<group>"; };
 		0D1BACA82844DC2E00F3DC08 /* NodeStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStatusResponse.swift; sourceTree = "<group>"; };
+		0D3005E828E88CAD008A8CDD /* BlockchainClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainClientTests.swift; sourceTree = "<group>"; };
+		0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainClient.swift; sourceTree = "<group>"; };
+		0D3005EB28E88CAD008A8CDD /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		0D3005EF28E88CD9008A8CDD /* MoscowTimeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoscowTimeProvider.swift; sourceTree = "<group>"; };
+		0D3005F028E88CD9008A8CDD /* MoscowTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoscowTimeView.swift; sourceTree = "<group>"; };
+		0D3005F128E88CD9008A8CDD /* MoscowTimeWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoscowTimeWidget.swift; sourceTree = "<group>"; };
+		0D3005F228E88CD9008A8CDD /* MoscowTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoscowTime.swift; sourceTree = "<group>"; };
 		0D324E30285A227400CB674D /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
 		0D5D90072833BE06002A9C21 /* DataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
 		0D5D90092833BFD9002A9C21 /* InputStreamTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStreamTests.swift; sourceTree = "<group>"; };
@@ -212,6 +230,32 @@
 			path = BitnodesClient;
 			sourceTree = "<group>";
 		};
+		0D3005E628E88CAD008A8CDD /* BlockchainClient */ = {
+			isa = PBXGroup;
+			children = (
+				0D3005E928E88CAD008A8CDD /* Sources */,
+				0D3005E728E88CAD008A8CDD /* Tests */,
+			);
+			path = BlockchainClient;
+			sourceTree = "<group>";
+		};
+		0D3005E728E88CAD008A8CDD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0D3005E828E88CAD008A8CDD /* BlockchainClientTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0D3005E928E88CAD008A8CDD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */,
+				0D3005EB28E88CAD008A8CDD /* Ticker.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		0D5D90062833BE06002A9C21 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +274,7 @@
 				0D960BA32829888700868897 /* App */,
 				0D960BF128298B7E00868897 /* BitcoinClient */,
 				0D1BAC9D2841618000F3DC08 /* BitnodesClient */,
+				0D3005E628E88CAD008A8CDD /* BlockchainClient */,
 				0D1BAC83283E102D00F3DC08 /* MempoolClient */,
 				0D960BD82829891800868897 /* Widgets */,
 				0D960BD32829891800868897 /* Frameworks */,
@@ -381,6 +426,11 @@
 				0DE9C238283B9378007B3F1B /* MempoolStatusProvider.swift */,
 				0DE9C23A283B9378007B3F1B /* MempoolStatusView.swift */,
 				0DE9C236283B9237007B3F1B /* MempoolStatusWidget.swift */,
+				0D3005F228E88CD9008A8CDD /* MoscowTime.swift */,
+				0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */,
+				0D3005EF28E88CD9008A8CDD /* MoscowTimeProvider.swift */,
+				0D3005F028E88CD9008A8CDD /* MoscowTimeView.swift */,
+				0D3005F128E88CD9008A8CDD /* MoscowTimeWidget.swift */,
 				0D960BE928298B3600868897 /* NodeStatus.swift */,
 				0D960BEA28298B3600868897 /* NodeStatusProvider.swift */,
 				0D960BEB28298B3600868897 /* NodeStatusView.swift */,
@@ -544,12 +594,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D43C0B128329C3E0002D25B /* MessageHeader.swift in Sources */,
+				0D0F0A2928E8912A0051AABC /* Ticker.swift in Sources */,
 				0D1BACA62844D6FB00F3DC08 /* CheckNodeResponse.swift in Sources */,
 				0D5D900F2833CAEE002A9C21 /* VersionMessageTests.swift in Sources */,
 				0D5D90102833CB35002A9C21 /* VersionMessage.swift in Sources */,
 				0D5D90082833BE06002A9C21 /* DataTests.swift in Sources */,
 				0D5D900A2833BFD9002A9C21 /* InputStreamTests.swift in Sources */,
 				0D5D90122833E8AC002A9C21 /* MagicNumber.swift in Sources */,
+				0D0F0A2828E8912A0051AABC /* BlockchainClient.swift in Sources */,
 				0D1BAC8D283E1EC600F3DC08 /* MempoolClient.swift in Sources */,
 				0D43C0B228329C580002D25B /* InputStream.swift in Sources */,
 				0D1BACA92844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */,
@@ -557,6 +609,7 @@
 				0D1BAC8B283E1EB600F3DC08 /* MempoolClientTests.swift in Sources */,
 				0DE9C230283B8B5A007B3F1B /* BitcoinClient.swift in Sources */,
 				0DE9C22F283B8A55007B3F1B /* BitcoinClientTests.swift in Sources */,
+				0D0F0A2728E891180051AABC /* BlockchainClientTests.swift in Sources */,
 				0D1BACA42844D50900F3DC08 /* BitnodesClient.swift in Sources */,
 				0D960BB62829888800868897 /* MessageHeaderTests.swift in Sources */,
 				0D43C0B328329C580002D25B /* Data.swift in Sources */,
@@ -574,9 +627,14 @@
 				0DC54976283B9744000D9994 /* MempoolStatusView.swift in Sources */,
 				0D1BACA72844D6FB00F3DC08 /* CheckNodeResponse.swift in Sources */,
 				0DC54977283B9744000D9994 /* MempoolStatusWidget.swift in Sources */,
+				0D0F0A2628E88D9B0051AABC /* MoscowTimeFormatter.swift in Sources */,
 				0D960BFC28298C1F00868897 /* InputStream.swift in Sources */,
+				0D3005F528E88CDA008A8CDD /* MoscowTimeWidget.swift in Sources */,
+				0D3005F628E88CDA008A8CDD /* MoscowTime.swift in Sources */,
 				0D960BEF28298B3600868897 /* NodeStatusView.swift in Sources */,
+				0D3005F328E88CDA008A8CDD /* MoscowTimeProvider.swift in Sources */,
 				0D960BF928298BC400868897 /* VersionMessage.swift in Sources */,
+				0D3005ED28E88CAD008A8CDD /* BlockchainClient.swift in Sources */,
 				0D1BACAA2844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */,
 				0D960BF028298B3600868897 /* NodeStatusWidget.swift in Sources */,
 				0D1BAC9A2840021C00F3DC08 /* CombinedStatusWidget.swift in Sources */,
@@ -593,10 +651,12 @@
 				0D960BF828298BC400868897 /* BitcoinClient.swift in Sources */,
 				0D960BED28298B3600868897 /* NodeStatus.swift in Sources */,
 				0D960BFD28298C1F00868897 /* Data.swift in Sources */,
+				0D3005F428E88CDA008A8CDD /* MoscowTimeView.swift in Sources */,
 				0D1BAC9F284161F900F3DC08 /* BitnodesClient.swift in Sources */,
 				0D5D90132833E8BE002A9C21 /* MagicNumber.swift in Sources */,
 				0DE9C235283B91CE007B3F1B /* BitcoinWidgets.swift in Sources */,
 				0DC54975283B972A000D9994 /* MempoolStatusProvider.swift in Sources */,
+				0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */,
 				0D1BAC98283EC7DA00F3DC08 /* CombinedStatusView.swift in Sources */,
 				0D960BF628298BC400868897 /* NetworkAddress.swift in Sources */,
 			);

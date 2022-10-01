@@ -9,6 +9,7 @@ struct BitcoinWidgets: WidgetBundle {
         NodeStatusWidget()
         MempoolStatusWidget()
         CombinedStatusWidget()
+        MoscowTimeWidget()
     }
 
 }
