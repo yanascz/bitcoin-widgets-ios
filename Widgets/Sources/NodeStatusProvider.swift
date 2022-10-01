@@ -6,7 +6,7 @@ struct NodeStatusProvider: IntentTimelineProvider {
     private let bitnodesClient = BitnodesClient()
 
     func placeholder(in context: Context) -> NodeStatus {
-        return NodeStatus(blockHeight: 755374, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016)
+        return NodeStatus(blockHeight: 756569, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (NodeStatus) -> ()) {
