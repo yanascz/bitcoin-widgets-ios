@@ -3,6 +3,8 @@ import Network
 
 class VersionMessageTests: XCTestCase {
 
+    private let dateFormatter = ISO8601DateFormatter()
+
     func testInitFromData() throws {
         let data = Data([
             // protocolVersion
@@ -33,7 +35,7 @@ class VersionMessageTests: XCTestCase {
 
         XCTAssertEqual(message.protocolVersion, 70016)
         XCTAssertEqual(message.services, 1037)
-        XCTAssertEqual(message.timestamp, try Date("2022-06-13T15:36:19Z", strategy: .iso8601))
+        XCTAssertEqual(message.timestamp, dateFormatter.date(from: "2022-06-13T15:36:19Z"))
         XCTAssertEqual(message.recipient.services, 0)
         XCTAssertEqual(message.recipient.address, IPv6Address.any)
         XCTAssertEqual(message.recipient.port, 0)
@@ -49,7 +51,7 @@ class VersionMessageTests: XCTestCase {
     func testToData() throws {
         let message = VersionMessage(
             protocolVersion: 70001,
-            timestamp: try Date("2022-06-13T15:36:19Z", strategy: .iso8601),
+            timestamp: dateFormatter.date(from: "2022-06-13T15:36:19Z")!,
             nonce: 0xDD9D202C3AB45713,
             userAgent: "/Satoshi:22.0.0/"
         )

@@ -8,8 +8,8 @@ class BitcoinClientTests: XCTestCase {
 
         XCTAssertEqual(message.protocolVersion, 70016)
         XCTAssertEqual(message.services, 1033)
-        XCTAssertGreaterThanOrEqual(message.timestamp, Date.now.advanced(by: -21))
-        XCTAssertLessThanOrEqual(message.timestamp, Date.now.advanced(by: 21))
+        XCTAssertGreaterThanOrEqual(message.timestamp, Date().advanced(by: -21))
+        XCTAssertLessThanOrEqual(message.timestamp, Date().advanced(by: 21))
         XCTAssertNotNil(message.recipient)
         XCTAssertNotNil(message.sender)
         XCTAssertNotNil(message.nonce)

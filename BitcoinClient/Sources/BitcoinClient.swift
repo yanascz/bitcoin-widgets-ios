@@ -45,7 +45,7 @@ class BitcoinClient {
     private var clientVersionMessage: VersionMessage {
         return VersionMessage(
             protocolVersion: 70001,
-            timestamp: Date.now,
+            timestamp: Date(),
             nonce: UInt64.random(in: UInt64.min...UInt64.max),
             userAgent: "/BitcoinClient:1.0.0/"
         )
