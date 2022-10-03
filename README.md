@@ -1,6 +1,6 @@
 # Bitcoin Widgets
 
-![Bitcoin Widgets](https://repository-images.githubusercontent.com/503792690/5e895813-b18a-47f4-b99d-ccc9a722534a)
+![Bitcoin Widgets](https://repository-images.githubusercontent.com/503792690/78980745-cce8-428e-ba02-c81f98f0a2e0)
 
 See status of your [full node](https://bitcoin.org/en/full-node) and/or [mempool.space](https://mempool.space) Bitcoin explorer on your iPhone, iPad or Mac with the Apple M1 chip.
 
