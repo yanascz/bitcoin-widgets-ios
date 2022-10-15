@@ -30,8 +30,7 @@ struct ContentView: View {
                     systemImage: "ladybug.fill")
             }
             Section(header: Text("ContentView.Support.header").font(.title2)) {
-                LabelLink("widgets@ln.yanas.cz", url: "lightning:widgets@ln.yanas.cz",
-                          systemImage: "bolt.fill")
+                LabelLink("widgets@yanas.cz", url: "lightning:widgets@yanas.cz", systemImage: "bolt.fill")
             }
         }.navigationTitle("ContentView.title").listStyle(.plain)
     }
