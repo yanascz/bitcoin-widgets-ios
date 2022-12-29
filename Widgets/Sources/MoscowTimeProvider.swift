@@ -1,42 +1,43 @@
 import WidgetKit
 
-struct MoscowTimeProvider: TimelineProvider {
+struct MoscowTimeProvider: IntentTimelineProvider {
 
     private let blockchainClient = BlockchainClient()
 
     func placeholder(in context: Context) -> MoscowTime {
-        return MoscowTime(primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 60909.31, secondaryCurrencyCode: "EUR")
+        return MoscowTime(format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR")
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (MoscowTime) -> ()) {
+    func getSnapshot(for configuration: MoscowTimeConfigurationIntent, in context: Context, completion: @escaping (MoscowTime) -> ()) {
         if context.isPreview {
             completion(placeholder(in: context))
             return
         }
 
         Task.init {
-            completion(try await getMoscowTime())
+            completion(try await getMoscowTime(for: configuration))
         }
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<MoscowTime>) -> ()) {
+    func getTimeline(for configuration: MoscowTimeConfigurationIntent, in context: Context, completion: @escaping (Timeline<MoscowTime>) -> ()) {
         Task.init {
-            let moscowTime = try await getMoscowTime()
+            let moscowTime = try await getMoscowTime(for: configuration)
             let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
             completion(Timeline(entries: [moscowTime], policy: .after(nextUpdate)))
         }
     }
 
-    func getMoscowTime() async throws -> MoscowTime {
+    func getMoscowTime(for configuration: MoscowTimeConfigurationIntent) async throws -> MoscowTime {
         let tickers = try await blockchainClient.getTickers()
-        let primaryCurrency = "USD"
-        let secondaryCurrency = "EUR"
+        let primaryCurrencyCode = "USD"
+        let secondaryCurrencyCode = "EUR"
 
         return MoscowTime(
-            primaryPrice: tickers[primaryCurrency]!.last as NSNumber,
-            primaryCurrencyCode: primaryCurrency,
-            secondaryPrice: tickers[secondaryCurrency]!.last as NSNumber,
-            secondaryCurrencyCode: secondaryCurrency
+            format: configuration.format,
+            primaryPrice: tickers[primaryCurrencyCode]!.last as NSNumber,
+            primaryCurrencyCode: primaryCurrencyCode,
+            secondaryPrice: tickers[secondaryCurrencyCode]!.last as NSNumber,
+            secondaryCurrencyCode: secondaryCurrencyCode
         )
     }
 

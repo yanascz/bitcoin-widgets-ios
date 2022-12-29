@@ -14,7 +14,7 @@ struct MoscowTimeWidget: Widget {
     }
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: "cz.yanas.bitcoin.MoscowTimeWidget", provider: MoscowTimeProvider()) { entry in
+        IntentConfiguration(kind: "cz.yanas.bitcoin.MoscowTimeWidget", intent: MoscowTimeConfigurationIntent.self, provider: MoscowTimeProvider()) { entry in
             MoscowTimeView(moscowTime: entry)
         }
         .configurationDisplayName("MoscowTimeWidget.displayName")
