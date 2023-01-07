@@ -9,7 +9,7 @@ struct NodeStatusProvider: IntentTimelineProvider {
         return NodeStatus(blockHeight: 756569, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016)
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (NodeStatus) -> ()) {
+    func getSnapshot(for configuration: NodeConfigurationIntent, in context: Context, completion: @escaping (NodeStatus) -> ()) {
         if context.isPreview {
             completion(placeholder(in: context))
             return
@@ -20,7 +20,7 @@ struct NodeStatusProvider: IntentTimelineProvider {
         }
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<NodeStatus>) -> ()) {
+    func getTimeline(for configuration: NodeConfigurationIntent, in context: Context, completion: @escaping (Timeline<NodeStatus>) -> ()) {
         Task.init {
             let nodeStatus = await getNodeStatus(for: configuration)
             let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
@@ -28,7 +28,7 @@ struct NodeStatusProvider: IntentTimelineProvider {
         }
     }
 
-    func getNodeStatus(for configuration: ConfigurationIntent) async -> NodeStatus {
+    func getNodeStatus(for configuration: NodeConfigurationIntent) async -> NodeStatus {
         if configuration.host == nil || configuration.port == nil {
             return NodeStatus(error: .configurationRequired)
         }

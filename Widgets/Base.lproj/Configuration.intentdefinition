@@ -64,7 +64,7 @@
 			<key>INIntentCategory</key>
 			<string>information</string>
 			<key>INIntentDescription</key>
-			<string>Configuration</string>
+			<string>Configure host and port of your node</string>
 			<key>INIntentDescriptionID</key>
 			<string>tVvJ9c</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -74,7 +74,7 @@
 			<key>INIntentLastParameterTag</key>
 			<integer>5</integer>
 			<key>INIntentName</key>
-			<string>Configuration</string>
+			<string>NodeConfiguration</string>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
@@ -179,7 +179,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Configuration</string>
+			<string>Node Configuration</string>
 			<key>INIntentTitleID</key>
 			<string>gpCwrM</string>
 			<key>INIntentType</key>

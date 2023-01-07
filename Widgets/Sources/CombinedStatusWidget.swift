@@ -4,7 +4,7 @@ import SwiftUI
 struct CombinedStatusWidget: Widget {
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: "cz.yanas.bitcoin.CombinedStatusWidget", intent: ConfigurationIntent.self, provider: CombinedStatusProvider()) { entry in
+        IntentConfiguration(kind: "cz.yanas.bitcoin.CombinedStatusWidget", intent: NodeConfigurationIntent.self, provider: CombinedStatusProvider()) { entry in
             CombinedStatusView(combinedStatus: entry)
         }
         .configurationDisplayName("CombinedStatusWidget.displayName")

@@ -14,7 +14,7 @@ struct NodeStatusWidget: Widget {
     }
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: "cz.yanas.bitcoin.NodeStatusWidget", intent: ConfigurationIntent.self, provider: NodeStatusProvider()) { entry in
+        IntentConfiguration(kind: "cz.yanas.bitcoin.NodeStatusWidget", intent: NodeConfigurationIntent.self, provider: NodeStatusProvider()) { entry in
             NodeStatusView(nodeStatus: entry)
         }
         .configurationDisplayName("NodeStatusWidget.displayName")
