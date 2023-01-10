@@ -6,8 +6,8 @@
 	<false/>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>ConfigurationIntent</string>
 		<string>MoscowTimeConfigurationIntent</string>
+		<string>NodeConfigurationIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -4,8 +4,9 @@
 "4uTPFk" = "Port";
 
 "CNIGff" = "Moscow Time Configuration";
-"Mm0rjP" = "Configure Moscow Time format";
+"Mm0rjP" = "Configure Moscow Time format and currencies";
 "Ld81XL" = "Moscow Time Format";
 "GivfKe" = "Format";
-"6OBZPT" = "19:52";
-"4MEyAY" = "1952";
+"7TuOxV" = "Fiat Currency";
+"jf1oAa" = "Primary Currency";
+"ZRIceO" = "Secondary Currency";

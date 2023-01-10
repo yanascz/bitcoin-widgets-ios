@@ -29,8 +29,8 @@ struct MoscowTimeProvider: IntentTimelineProvider {
 
     func getMoscowTime(for configuration: MoscowTimeConfigurationIntent) async throws -> MoscowTime {
         let tickers = try await blockchainClient.getTickers()
-        let primaryCurrencyCode = "USD"
-        let secondaryCurrencyCode = "EUR"
+        let primaryCurrencyCode = configuration.primaryCurrency.code
+        let secondaryCurrencyCode = configuration.secondaryCurrency.code
 
         return MoscowTime(
             format: configuration.format,
@@ -39,6 +39,27 @@ struct MoscowTimeProvider: IntentTimelineProvider {
             secondaryPrice: tickers[secondaryCurrencyCode]!.last as NSNumber,
             secondaryCurrencyCode: secondaryCurrencyCode
         )
+    }
+
+}
+
+extension FiatCurrency {
+
+    var code: String {
+        switch self {
+            case .cad:
+                return "CAD"
+            case .chf:
+                return "CHF"
+            case .eur:
+                return "EUR"
+            case .gbp:
+                return "GBP"
+            case .usd:
+                return "USD"
+            default:
+                return "?"
+        }
     }
 
 }

@@ -1,11 +1,12 @@
 "gpCwrM" = "Konfigurace uzlu";
-"tVvJ9c" = "Nastavte host and port svého uzlu";
-"4L4D5m" = "Host";
+"tVvJ9c" = "Nastavte adresu and port svého uzlu";
+"4L4D5m" = "Adresa";
 "4uTPFk" = "Port";
 
-"CNIGff" = "Moscow Time konfigurace";
-"Mm0rjP" = "Nastavte Moscow Time formát";
-"Ld81XL" = "Moscow Time formát";
+"CNIGff" = "Konfigurace Moskevského času";
+"Mm0rjP" = "Nastavte formát a měny Moskevského času";
+"Ld81XL" = "Formát Moskevského času";
 "GivfKe" = "Formát";
-"6OBZPT" = "19:52";
-"4MEyAY" = "1952";
+"7TuOxV" = "Fiat měna";
+"jf1oAa" = "Primární měna";
+"ZRIceO" = "Sekundární měna";
