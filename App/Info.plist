@@ -6,6 +6,7 @@
 	<false/>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>MempoolConfigurationIntent</string>
 		<string>MoscowTimeConfigurationIntent</string>
 		<string>NodeConfigurationIntent</string>
 	</array>

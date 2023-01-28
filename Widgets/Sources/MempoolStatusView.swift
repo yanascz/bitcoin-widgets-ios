@@ -12,7 +12,7 @@ struct MempoolStatusView: View {
             accessoryView(for: family)
         } else {
             ZStack {
-                BitcoinBackground(family: family)
+                BitcoinBackground(family: family, showLogo: mempoolStatus.showBitcoinLogo)
                 systemView(for: family)
             }
         }
@@ -82,23 +82,23 @@ struct MempoolStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
+            MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
 
-            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
+            MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
+            MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: false, blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
 
             if #available(iOSApplicationExtension 16.0, *) {
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
+                MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
+                MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: false, blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
+                MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
 
-                MempoolStatusView(mempoolStatus: MempoolStatus(blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
+                MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
             }
         }

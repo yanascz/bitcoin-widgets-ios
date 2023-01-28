@@ -2,6 +2,11 @@
 "tVvJ9c" = "Configure host and port of your node";
 "4L4D5m" = "Host";
 "4uTPFk" = "Port";
+"u1GuAn" = "Show Bitcoin Logo";
+
+"tWGjwd" = "Mempool Configuration";
+"JKy8Ff" = "Configure mempool.space display options";
+"17ZqzB" = "Show Bitcoin Logo";
 
 "CNIGff" = "Moscow Time Configuration";
 "Mm0rjP" = "Configure Moscow Time format and currencies";
@@ -10,3 +15,4 @@
 "7TuOxV" = "Fiat Currency";
 "jf1oAa" = "Primary Currency";
 "ZRIceO" = "Secondary Currency";
+"FDOABk" = "Show Bitcoin Logo";

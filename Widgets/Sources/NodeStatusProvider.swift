@@ -6,7 +6,7 @@ struct NodeStatusProvider: IntentTimelineProvider {
     private let bitnodesClient = BitnodesClient()
 
     func placeholder(in context: Context) -> NodeStatus {
-        return NodeStatus(blockHeight: 756569, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016)
+        return NodeStatus(showBitcoinLogo: true, blockHeight: 756569, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016)
     }
 
     func getSnapshot(for configuration: NodeConfigurationIntent, in context: Context, completion: @escaping (NodeStatus) -> ()) {
@@ -29,8 +29,10 @@ struct NodeStatusProvider: IntentTimelineProvider {
     }
 
     func getNodeStatus(for configuration: NodeConfigurationIntent) async -> NodeStatus {
+        let showBitcoinLogo = Bool(truncating: configuration.showBitcoinLogo ?? true)
+
         if configuration.host == nil || configuration.port == nil {
-            return NodeStatus(error: .configurationRequired)
+            return NodeStatus(showBitcoinLogo: showBitcoinLogo, error: .configurationRequired)
         }
 
         let host = configuration.host!
@@ -39,10 +41,11 @@ struct NodeStatusProvider: IntentTimelineProvider {
         if host.hasSuffix(".onion") {
             guard let cachedStatus = try? await bitnodesClient.getNodeStatus(host: host, port: port),
                   let currentStatus = try? await bitnodesClient.checkNode(host: host, port: port) else {
-                return NodeStatus(error: .nodeUnreachable)
+                return NodeStatus(showBitcoinLogo: showBitcoinLogo, error: .nodeUnreachable)
             }
 
             return NodeStatus(
+                showBitcoinLogo: showBitcoinLogo,
                 blockHeight: currentStatus.height,
                 userAgent: cachedStatus.userAgent,
                 protocolVersion: cachedStatus.protocolVersion
@@ -52,10 +55,11 @@ struct NodeStatusProvider: IntentTimelineProvider {
         let client = BitcoinClient(host: host, port: port)
 
         guard let versionMessage = try? await client.getVersionMessage() else {
-            return NodeStatus(error: .nodeUnreachable)
+            return NodeStatus(showBitcoinLogo: showBitcoinLogo, error: .nodeUnreachable)
         }
 
         return NodeStatus(
+            showBitcoinLogo: showBitcoinLogo,
             blockHeight: versionMessage.blockHeight,
             userAgent: versionMessage.userAgent,
             protocolVersion: versionMessage.protocolVersion

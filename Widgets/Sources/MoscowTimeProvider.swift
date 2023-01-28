@@ -5,7 +5,7 @@ struct MoscowTimeProvider: IntentTimelineProvider {
     private let blockchainClient = BlockchainClient()
 
     func placeholder(in context: Context) -> MoscowTime {
-        return MoscowTime(format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR")
+        return MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR")
     }
 
     func getSnapshot(for configuration: MoscowTimeConfigurationIntent, in context: Context, completion: @escaping (MoscowTime) -> ()) {
@@ -33,6 +33,7 @@ struct MoscowTimeProvider: IntentTimelineProvider {
         let secondaryCurrencyCode = configuration.secondaryCurrency.code
 
         return MoscowTime(
+            showBitcoinLogo: Bool(truncating: configuration.showBitcoinLogo ?? true),
             format: configuration.format,
             primaryPrice: tickers[primaryCurrencyCode]!.last as NSNumber,
             primaryCurrencyCode: primaryCurrencyCode,

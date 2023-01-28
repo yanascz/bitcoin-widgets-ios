@@ -14,7 +14,7 @@ struct MempoolStatusWidget: Widget {
     }
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: "cz.yanas.bitcoin.MempoolStatusWidget", provider: MempoolStatusProvider()) { entry in
+        IntentConfiguration(kind: "cz.yanas.bitcoin.MempoolStatusWidget", intent: MempoolConfigurationIntent.self, provider: MempoolStatusProvider()) { entry in
             MempoolStatusView(mempoolStatus: entry)
         }
         .configurationDisplayName("MempoolStatusWidget.displayName")

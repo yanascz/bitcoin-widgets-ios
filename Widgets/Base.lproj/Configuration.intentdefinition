@@ -145,7 +145,7 @@
 			<key>INIntentIneligibleForSuggestions</key>
 			<true/>
 			<key>INIntentLastParameterTag</key>
-			<integer>5</integer>
+			<integer>7</integer>
 			<key>INIntentName</key>
 			<string>NodeConfiguration</string>
 			<key>INIntentParameters</key>
@@ -234,6 +234,50 @@
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Show Bitcoin Logo</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>u1GuAn</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>3</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<true/>
+						<key>INIntentParameterMetadataFalseDisplayName</key>
+						<string>false</string>
+						<key>INIntentParameterMetadataFalseDisplayNameID</key>
+						<string>SLFpM5</string>
+						<key>INIntentParameterMetadataTrueDisplayName</key>
+						<string>true</string>
+						<key>INIntentParameterMetadataTrueDisplayNameID</key>
+						<string>QjUgXC</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>showBitcoinLogo</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterTag</key>
+					<integer>7</integer>
+					<key>INIntentParameterType</key>
+					<string>Boolean</string>
+				</dict>
 			</array>
 			<key>INIntentResponse</key>
 			<dict>
@@ -272,7 +316,7 @@
 			<key>INIntentIneligibleForSuggestions</key>
 			<true/>
 			<key>INIntentLastParameterTag</key>
-			<integer>8</integer>
+			<integer>10</integer>
 			<key>INIntentName</key>
 			<string>MoscowTimeConfiguration</string>
 			<key>INIntentParameters</key>
@@ -457,6 +501,50 @@
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Show Bitcoin Logo</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>FDOABk</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>4</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<true/>
+						<key>INIntentParameterMetadataFalseDisplayName</key>
+						<string>false</string>
+						<key>INIntentParameterMetadataFalseDisplayNameID</key>
+						<string>CAA4rr</string>
+						<key>INIntentParameterMetadataTrueDisplayName</key>
+						<string>true</string>
+						<key>INIntentParameterMetadataTrueDisplayNameID</key>
+						<string>Ck5tPY</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>showBitcoinLogo</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterTag</key>
+					<integer>10</integer>
+					<key>INIntentParameterType</key>
+					<string>Boolean</string>
+				</dict>
 			</array>
 			<key>INIntentResponse</key>
 			<dict>
@@ -482,6 +570,93 @@
 			<string>Custom</string>
 			<key>INIntentVerb</key>
 			<string>View</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentDescription</key>
+			<string>Configure mempool.space display options</string>
+			<key>INIntentDescriptionID</key>
+			<string>JKy8Ff</string>
+			<key>INIntentEligibleForWidgets</key>
+			<true/>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
+			<key>INIntentLastParameterTag</key>
+			<integer>2</integer>
+			<key>INIntentName</key>
+			<string>MempoolConfiguration</string>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Show Bitcoin Logo</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>17ZqzB</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<true/>
+						<key>INIntentParameterMetadataFalseDisplayName</key>
+						<string>false</string>
+						<key>INIntentParameterMetadataFalseDisplayNameID</key>
+						<string>cWt4u0</string>
+						<key>INIntentParameterMetadataTrueDisplayName</key>
+						<string>true</string>
+						<key>INIntentParameterMetadataTrueDisplayNameID</key>
+						<string>RdaYfr</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>showBitcoinLogo</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterTag</key>
+					<integer>2</integer>
+					<key>INIntentParameterType</key>
+					<string>Boolean</string>
+				</dict>
+			</array>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Mempool Configuration</string>
+			<key>INIntentTitleID</key>
+			<string>tWGjwd</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Do</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

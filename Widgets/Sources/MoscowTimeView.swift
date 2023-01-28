@@ -11,7 +11,7 @@ struct MoscowTimeView: View {
             accessoryView(for: family)
         } else {
             ZStack {
-                BitcoinBackground(family: family)
+                BitcoinBackground(family: family, showLogo: moscowTime.showBitcoinLogo)
                 systemView(for: family)
             }
         }
@@ -80,25 +80,25 @@ struct MoscowTimeView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            MoscowTimeView(moscowTime: MoscowTime(format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+            MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            MoscowTimeView(moscowTime: MoscowTime(format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+            MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: false, format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
 
-            MoscowTimeView(moscowTime: MoscowTime(format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+            MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            MoscowTimeView(moscowTime: MoscowTime(format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+            MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: false, format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
 
             if #available(iOSApplicationExtension 16.0, *) {
-                MoscowTimeView(moscowTime: MoscowTime(format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+                MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                MoscowTimeView(moscowTime: MoscowTime(format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+                MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: false, format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
 
-                MoscowTimeView(moscowTime: MoscowTime(format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+                MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
-                MoscowTimeView(moscowTime: MoscowTime(format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
+                MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: false, format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
             }
         }

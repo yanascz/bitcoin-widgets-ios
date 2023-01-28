@@ -12,7 +12,7 @@ struct NodeStatusView: View {
             accessoryView(for: family)
         } else {
             ZStack {
-                BitcoinBackground(family: family)
+                BitcoinBackground(family: family, showLogo: nodeStatus.showBitcoinLogo)
                 systemView(for: family)
             }
         }
@@ -72,33 +72,33 @@ struct NodeStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            NodeStatusView(nodeStatus: NodeStatus(error: .configurationRequired))
+            NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, error: .configurationRequired))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            NodeStatusView(nodeStatus: NodeStatus(error: .nodeUnreachable))
+            NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: false, error: .nodeUnreachable))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            NodeStatusView(nodeStatus: NodeStatus(blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
+            NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
 
-            NodeStatusView(nodeStatus: NodeStatus(error: .configurationRequired))
+            NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, error: .configurationRequired))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            NodeStatusView(nodeStatus: NodeStatus(error: .nodeUnreachable))
+            NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: false, error: .nodeUnreachable))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            NodeStatusView(nodeStatus: NodeStatus(blockHeight: 754091, userAgent: "/Satoshi:22.99.0/", protocolVersion: 70016))
+            NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, blockHeight: 754091, userAgent: "/Satoshi:22.99.0/", protocolVersion: 70016))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
 
             if #available(iOSApplicationExtension 16.0, *) {
-                NodeStatusView(nodeStatus: NodeStatus(error: .configurationRequired))
+                NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, error: .configurationRequired))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                NodeStatusView(nodeStatus: NodeStatus(error: .nodeUnreachable))
+                NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: false, error: .nodeUnreachable))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-                NodeStatusView(nodeStatus: NodeStatus(blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
+                NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
                     .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
 
-                NodeStatusView(nodeStatus: NodeStatus(error: .configurationRequired))
+                NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, error: .configurationRequired))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
-                NodeStatusView(nodeStatus: NodeStatus(error: .nodeUnreachable))
+                NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: false, error: .nodeUnreachable))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
-                NodeStatusView(nodeStatus: NodeStatus(blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
+                NodeStatusView(nodeStatus: NodeStatus(showBitcoinLogo: true, blockHeight: 754091, userAgent: "/Satoshi:23.0.0/", protocolVersion: 70016))
                     .previewContext(WidgetPreviewContext(family: .accessoryInline))
             }
         }

@@ -34,7 +34,7 @@ struct CombinedStatusProvider: IntentTimelineProvider {
 
     func getCombinedStatus(for configuration: NodeConfigurationIntent) async throws -> CombinedStatus {
         let nodeStatus = await nodeStatusProvider.getNodeStatus(for: configuration)
-        let mempoolStatus = try await mempoolStatusProvider.getMempoolStatus()
+        let mempoolStatus = try await mempoolStatusProvider.getMempoolStatus(showBitcoinLogo: configuration.showBitcoinLogo)
 
         return CombinedStatus(nodeStatus: nodeStatus, mempoolStatus: mempoolStatus)
     }
