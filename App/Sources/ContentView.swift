@@ -67,6 +67,7 @@ struct ContentView: View {
                 Label("ContentView.AddTo.LockScreen.step2", systemImage: "2.circle.fill")
                 Label("ContentView.AddTo.LockScreen.step3", systemImage: "3.circle.fill")
                 Label("ContentView.AddTo.LockScreen.step4", systemImage: "4.circle.fill")
+                Label("ContentView.AddTo.LockScreen.step5", systemImage: "5.circle.fill")
             }.navigationTitle("ContentView.AddTo.LockScreen.header").listStyle(.plain)
         } label: {
             Label("ContentView.AddTo.LockScreen.link", systemImage: "plus.circle.fill")

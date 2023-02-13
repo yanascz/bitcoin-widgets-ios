@@ -12,9 +12,10 @@
 "ContentView.AddTo.LockScreen.link" = "Lock Screen";
 "ContentView.AddTo.LockScreen.header" = "Add to Lock Screen";
 "ContentView.AddTo.LockScreen.step1" = "Touch and hold the Lock Screen until the Customize button appears at the bottom of the screen.";
-"ContentView.AddTo.LockScreen.step2" = "Tap the Customize button, then tap the box above or below the time.";
-"ContentView.AddTo.LockScreen.step3" = "Look up Bitcoin Widgets, then tap or drag the widgets you want to add.";
-"ContentView.AddTo.LockScreen.step4" = "Close the widget popup, then tap Done.";
+"ContentView.AddTo.LockScreen.step2" = "Tap the Customize button, then tap the Lock Screen option.";
+"ContentView.AddTo.LockScreen.step3" = "Tap the box above or below the time you want to customize.";
+"ContentView.AddTo.LockScreen.step4" = "Look up Bitcoin Widgets, then tap or drag the widgets you want to add.";
+"ContentView.AddTo.LockScreen.step5" = "Close the widget popup, then tap Done.";
 "ContentView.AddTo.HomeScreen.link" = "Home Screen";
 "ContentView.AddTo.HomeScreen.header" = "Add to Home Screen";
 "ContentView.AddTo.HomeScreen.step1" = "From the Home Screen, touch and hold a widget or an empty area until the apps jiggle.";
