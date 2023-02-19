@@ -33,6 +33,7 @@
 		0D3005F428E88CDA008A8CDD /* MoscowTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F028E88CD9008A8CDD /* MoscowTimeView.swift */; };
 		0D3005F528E88CDA008A8CDD /* MoscowTimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F128E88CD9008A8CDD /* MoscowTimeWidget.swift */; };
 		0D3005F628E88CDA008A8CDD /* MoscowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F228E88CD9008A8CDD /* MoscowTime.swift */; };
+		0D31D90F29A3A531002ECE5B /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */; };
 		0D43C0B128329C3E0002D25B /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BF328298BC400868897 /* MessageHeader.swift */; };
 		0D43C0B228329C580002D25B /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFA28298C1F00868897 /* InputStream.swift */; };
 		0D43C0B328329C580002D25B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFB28298C1F00868897 /* Data.swift */; };
@@ -53,7 +54,7 @@
 		0D960BD52829891800868897 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D960BD42829891800868897 /* WidgetKit.framework */; };
 		0D960BD72829891800868897 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D960BD62829891800868897 /* SwiftUI.framework */; };
 		0D960BDD2829891900868897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BDC2829891900868897 /* Assets.xcassets */; };
-		0D960BE32829891900868897 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D960BD22829891800868897 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D960BE32829891900868897 /* iOS Widget Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D960BD22829891800868897 /* iOS Widget Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0D960BED28298B3600868897 /* NodeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BE928298B3600868897 /* NodeStatus.swift */; };
 		0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BEA28298B3600868897 /* NodeStatusProvider.swift */; };
 		0D960BEF28298B3600868897 /* NodeStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BEB28298B3600868897 /* NodeStatusView.swift */; };
@@ -67,7 +68,6 @@
 		0DAC68E428D6EBD4001930BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC68E628D6EBD4001930BC /* Localizable.strings */; };
 		0DAC68E828D6F39F001930BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC68EA28D6F39F001930BC /* Localizable.strings */; };
 		0DB68DD828D72FD500073E09 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */; };
-		0DB68DE028D731A100073E09 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */; };
 		0DC54974283B971B000D9994 /* MempoolStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C239283B9378007B3F1B /* MempoolStatus.swift */; };
 		0DC54975283B972A000D9994 /* MempoolStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C238283B9378007B3F1B /* MempoolStatusProvider.swift */; };
 		0DC54976283B9744000D9994 /* MempoolStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C23A283B9378007B3F1B /* MempoolStatusView.swift */; };
@@ -111,7 +111,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0D960BE32829891900868897 /* WidgetExtension.appex in Embed App Extensions */,
+				0D960BE32829891900868897 /* iOS Widget Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +149,9 @@
 		0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWidgetsApp.swift; sourceTree = "<group>"; };
 		0D960BA62829888700868897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D960BA82829888800868897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D960BB12829888800868897 /* BitcoinWidgetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinWidgetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D960BB12829888800868897 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D960BB52829888800868897 /* MessageHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHeaderTests.swift; sourceTree = "<group>"; };
-		0D960BD22829891800868897 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D960BD22829891800868897 /* iOS Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D960BD42829891800868897 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0D960BD62829891800868897 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		0D960BDC2829891900868897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -268,9 +268,6 @@
 		0D960B982829888700868897 = {
 			isa = PBXGroup;
 			children = (
-				0DEFB2D128577120009AF82D /* LICENSE */,
-				0D324E30285A227400CB674D /* PRIVACY.md */,
-				0DEFB2D0285762F7009AF82D /* README.md */,
 				0D960BA32829888700868897 /* App */,
 				0D960BF128298B7E00868897 /* BitcoinClient */,
 				0D1BAC9D2841618000F3DC08 /* BitnodesClient */,
@@ -278,6 +275,9 @@
 				0D1BAC83283E102D00F3DC08 /* MempoolClient */,
 				0D960BD82829891800868897 /* Widgets */,
 				0D960BD32829891800868897 /* Frameworks */,
+				0DEFB2D128577120009AF82D /* LICENSE */,
+				0D324E30285A227400CB674D /* PRIVACY.md */,
+				0DEFB2D0285762F7009AF82D /* README.md */,
 				0D960BA22829888700868897 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -286,8 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				0D960BA12829888700868897 /* BitcoinWidgets.app */,
-				0D960BB12829888800868897 /* BitcoinWidgetsTests.xctest */,
-				0D960BD22829891800868897 /* WidgetExtension.appex */,
+				0D960BB12829888800868897 /* Tests.xctest */,
+				0D960BD22829891800868897 /* iOS Widget Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -463,9 +463,9 @@
 			productReference = 0D960BA12829888700868897 /* BitcoinWidgets.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D960BB02829888800868897 /* BitcoinWidgetsTests */ = {
+		0D960BB02829888800868897 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D960BC82829888800868897 /* Build configuration list for PBXNativeTarget "BitcoinWidgetsTests" */;
+			buildConfigurationList = 0D960BC82829888800868897 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				0D960BAD2829888800868897 /* Sources */,
 				0D960BAE2829888800868897 /* Frameworks */,
@@ -477,16 +477,16 @@
 				0D0A975F282AFA3100D7DE06 /* PBXTargetDependency */,
 				0D960BB32829888800868897 /* PBXTargetDependency */,
 			);
-			name = BitcoinWidgetsTests;
+			name = Tests;
 			packageProductDependencies = (
 			);
 			productName = BitcoinWidgetsTests;
-			productReference = 0D960BB12829888800868897 /* BitcoinWidgetsTests.xctest */;
+			productReference = 0D960BB12829888800868897 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0D960BD12829891800868897 /* WidgetExtension */ = {
+		0D960BD12829891800868897 /* iOS Widget Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D960BE42829891900868897 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildConfigurationList = 0D960BE42829891900868897 /* Build configuration list for PBXNativeTarget "iOS Widget Extension" */;
 			buildPhases = (
 				0D960BCE2829891800868897 /* Sources */,
 				0D960BCF2829891800868897 /* Frameworks */,
@@ -496,11 +496,11 @@
 			);
 			dependencies = (
 			);
-			name = WidgetExtension;
+			name = "iOS Widget Extension";
 			packageProductDependencies = (
 			);
 			productName = WidgetsExtension;
-			productReference = 0D960BD22829891800868897 /* WidgetExtension.appex */;
+			productReference = 0D960BD22829891800868897 /* iOS Widget Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -542,8 +542,8 @@
 			projectRoot = "";
 			targets = (
 				0D960BA02829888700868897 /* BitcoinWidgets */,
-				0D960BB02829888800868897 /* BitcoinWidgetsTests */,
-				0D960BD12829891800868897 /* WidgetExtension */,
+				0D960BD12829891800868897 /* iOS Widget Extension */,
+				0D960BB02829888800868897 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -582,10 +582,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DEFB2CF285731BB009AF82D /* LabelLink.swift in Sources */,
-				0D960BA72829888700868897 /* ContentView.swift in Sources */,
 				0D960BA52829888700868897 /* BitcoinWidgetsApp.swift in Sources */,
-				0DB68DE028D731A100073E09 /* Configuration.intentdefinition in Sources */,
+				0D960BA72829888700868897 /* ContentView.swift in Sources */,
+				0DEFB2CF285731BB009AF82D /* LabelLink.swift in Sources */,
+				0D31D90F29A3A531002ECE5B /* Configuration.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,41 +624,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC54976283B9744000D9994 /* MempoolStatusView.swift in Sources */,
-				0D1BACA72844D6FB00F3DC08 /* CheckNodeResponse.swift in Sources */,
-				0DC54977283B9744000D9994 /* MempoolStatusWidget.swift in Sources */,
-				0D0F0A2628E88D9B0051AABC /* MoscowTimeFormatter.swift in Sources */,
-				0D960BFC28298C1F00868897 /* InputStream.swift in Sources */,
-				0D3005F528E88CDA008A8CDD /* MoscowTimeWidget.swift in Sources */,
-				0D3005F628E88CDA008A8CDD /* MoscowTime.swift in Sources */,
-				0D960BEF28298B3600868897 /* NodeStatusView.swift in Sources */,
-				0D3005F328E88CDA008A8CDD /* MoscowTimeProvider.swift in Sources */,
-				0D960BF928298BC400868897 /* VersionMessage.swift in Sources */,
-				0D3005ED28E88CAD008A8CDD /* BlockchainClient.swift in Sources */,
-				0D1BACAA2844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */,
-				0D960BF028298B3600868897 /* NodeStatusWidget.swift in Sources */,
-				0D1BAC9A2840021C00F3DC08 /* CombinedStatusWidget.swift in Sources */,
-				0D1BAC8F283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */,
-				0DEC984F28396364004CB636 /* URLSessionStreamTask.swift in Sources */,
-				0DC54974283B971B000D9994 /* MempoolStatus.swift in Sources */,
+				0D960BF828298BC400868897 /* BitcoinClient.swift in Sources */,
+				0D5D90132833E8BE002A9C21 /* MagicNumber.swift in Sources */,
 				0D960BF728298BC400868897 /* MessageHeader.swift in Sources */,
+				0D960BF628298BC400868897 /* NetworkAddress.swift in Sources */,
+				0D960BF928298BC400868897 /* VersionMessage.swift in Sources */,
+				0D960BFD28298C1F00868897 /* Data.swift in Sources */,
+				0D960BFC28298C1F00868897 /* InputStream.swift in Sources */,
+				0DEC984F28396364004CB636 /* URLSessionStreamTask.swift in Sources */,
+				0D1BAC9F284161F900F3DC08 /* BitnodesClient.swift in Sources */,
+				0D1BACA72844D6FB00F3DC08 /* CheckNodeResponse.swift in Sources */,
+				0D1BACAA2844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */,
+				0D3005ED28E88CAD008A8CDD /* BlockchainClient.swift in Sources */,
+				0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */,
+				0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */,
+				0D1BAC8F283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */,
+				0D75326728E8822800776552 /* BitcoinBackground.swift in Sources */,
+				0DE9C235283B91CE007B3F1B /* BitcoinWidgets.swift in Sources */,
 				0D1BAC92283EC50100F3DC08 /* CombinedStatus.swift in Sources */,
 				0D1BAC96283EC5BD00F3DC08 /* CombinedStatusProvider.swift in Sources */,
-				0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */,
-				0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */,
-				0DB68DD828D72FD500073E09 /* Configuration.intentdefinition in Sources */,
-				0D75326728E8822800776552 /* BitcoinBackground.swift in Sources */,
-				0D960BF828298BC400868897 /* BitcoinClient.swift in Sources */,
-				0D960BED28298B3600868897 /* NodeStatus.swift in Sources */,
-				0D960BFD28298C1F00868897 /* Data.swift in Sources */,
-				0D3005F428E88CDA008A8CDD /* MoscowTimeView.swift in Sources */,
-				0D1BAC9F284161F900F3DC08 /* BitnodesClient.swift in Sources */,
-				0D5D90132833E8BE002A9C21 /* MagicNumber.swift in Sources */,
-				0DE9C235283B91CE007B3F1B /* BitcoinWidgets.swift in Sources */,
-				0DC54975283B972A000D9994 /* MempoolStatusProvider.swift in Sources */,
-				0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */,
 				0D1BAC98283EC7DA00F3DC08 /* CombinedStatusView.swift in Sources */,
-				0D960BF628298BC400868897 /* NetworkAddress.swift in Sources */,
+				0D1BAC9A2840021C00F3DC08 /* CombinedStatusWidget.swift in Sources */,
+				0DC54974283B971B000D9994 /* MempoolStatus.swift in Sources */,
+				0DC54975283B972A000D9994 /* MempoolStatusProvider.swift in Sources */,
+				0DC54976283B9744000D9994 /* MempoolStatusView.swift in Sources */,
+				0DC54977283B9744000D9994 /* MempoolStatusWidget.swift in Sources */,
+				0D3005F628E88CDA008A8CDD /* MoscowTime.swift in Sources */,
+				0D0F0A2628E88D9B0051AABC /* MoscowTimeFormatter.swift in Sources */,
+				0D3005F328E88CDA008A8CDD /* MoscowTimeProvider.swift in Sources */,
+				0D3005F428E88CDA008A8CDD /* MoscowTimeView.swift in Sources */,
+				0D3005F528E88CDA008A8CDD /* MoscowTimeWidget.swift in Sources */,
+				0D960BED28298B3600868897 /* NodeStatus.swift in Sources */,
+				0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */,
+				0D960BEF28298B3600868897 /* NodeStatusView.swift in Sources */,
+				0D960BF028298B3600868897 /* NodeStatusWidget.swift in Sources */,
+				0DB68DD828D72FD500073E09 /* Configuration.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,7 +667,7 @@
 /* Begin PBXTargetDependency section */
 		0D0A975F282AFA3100D7DE06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D960BD12829891800868897 /* WidgetExtension */;
+			target = 0D960BD12829891800868897 /* iOS Widget Extension */;
 			targetProxy = 0D0A975E282AFA3100D7DE06 /* PBXContainerItemProxy */;
 		};
 		0D960BB32829888800868897 /* PBXTargetDependency */ = {
@@ -677,7 +677,7 @@
 		};
 		0D960BE22829891900868897 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D960BD12829891800868897 /* WidgetExtension */;
+			target = 0D960BD12829891800868897 /* iOS Widget Extension */;
 			targetProxy = 0D960BE12829891900868897 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -942,7 +942,7 @@
 				DEVELOPMENT_TEAM = 8U887FVM96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -971,7 +971,7 @@
 				DEVELOPMENT_TEAM = 8U887FVM96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1010,7 +1010,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D960BC82829888800868897 /* Build configuration list for PBXNativeTarget "BitcoinWidgetsTests" */ = {
+		0D960BC82829888800868897 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D960BC92829888800868897 /* Debug */,
@@ -1019,7 +1019,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D960BE42829891900868897 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+		0D960BE42829891900868897 /* Build configuration list for PBXNativeTarget "iOS Widget Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D960BE52829891900868897 /* Debug */,
