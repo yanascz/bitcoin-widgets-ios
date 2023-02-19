@@ -4,6 +4,16 @@ struct MoscowTimeProvider: IntentTimelineProvider {
 
     private let blockchainClient = BlockchainClient()
 
+    @available(iOSApplicationExtension 16.0, watchOS 9.0, *)
+    func recommendations() -> [IntentRecommendation<MoscowTimeConfigurationIntent>] {
+        let configuration = MoscowTimeConfigurationIntent()
+        configuration.format = .time
+        configuration.primaryCurrency = .usd
+        configuration.secondaryCurrency = .eur
+
+        return [IntentRecommendation(intent: configuration, description: "MoscowTimeWidget.displayName")]
+    }
+
     func placeholder(in context: Context) -> MoscowTime {
         return MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR")
     }

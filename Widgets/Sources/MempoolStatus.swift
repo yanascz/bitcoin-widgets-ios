@@ -13,4 +13,3 @@ struct MempoolStatus: TimelineEntry {
     let minimumFee: Int
 
 }
-

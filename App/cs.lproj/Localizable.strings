@@ -1,5 +1,14 @@
 "ContentView.title" = "Bitcoin Widgets";
 "ContentView.AddTo.header" = "Přidání";
+"ContentView.AddTo.WatchFace.link" = "Na ciferník hodinek";
+"ContentView.AddTo.WatchFace.header" = "Ciferník hodinek";
+"ContentView.AddTo.WatchFace.step1" = "Stiskněte korunku Digital Crown na svých hodinkách pro zobrazení ciferníku.";
+"ContentView.AddTo.WatchFace.step2" = "Podržte prst na displeji s aktuálním ciferníkem, pak klepněte na „Upravit“.";
+"ContentView.AddTo.WatchFace.step3" = "Přejížděním doleva/doprava vyberte ciferník, pak klepněte na „Upravit“.";
+"ContentView.AddTo.WatchFace.step4" = "Přejeďte úplně doleva k editaci komplikací, klepnutím nějakou vyberte.";
+"ContentView.AddTo.WatchFace.step5" = "Najděte Bitcoin Widgets, klepnutím vyberte požadovanou komplikaci.";
+"ContentView.AddTo.WatchFace.step6" = "Uložte změny stisknutím korunky Digital Crown.";
+"ContentView.AddTo.WatchFace.step7" = "Klepnutím na ciferník jej nastavte jako aktuální.";
 "ContentView.AddTo.LockScreen.link" = "Na zamknutou obrazovku";
 "ContentView.AddTo.LockScreen.header" = "Zamknutá obrazovka";
 "ContentView.AddTo.LockScreen.step1" = "Stiskněte a podržte zamknutou obrazovku, dokud se neobjeví tlačítko „Přizpůsobit“ u spodního okraje displeje.";

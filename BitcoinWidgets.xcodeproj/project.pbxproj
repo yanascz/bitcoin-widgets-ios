@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D004CC129A293BA00EC6309 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D960BD42829891800868897 /* WidgetKit.framework */; };
+		0D004CC229A293BA00EC6309 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D960BD62829891800868897 /* SwiftUI.framework */; };
+		0D004CCB29A293BC00EC6309 /* watchOS Widget Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0D004CC029A293BA00EC6309 /* watchOS Widget Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D004CD029A2943100EC6309 /* Bitcoin Widgets.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0D004CAE29A2933700EC6309 /* Bitcoin Widgets.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D004CD429A2950600EC6309 /* BitcoinWidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */; };
+		0D004CD529A2950900EC6309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA62829888700868897 /* ContentView.swift */; };
+		0D004CD629A2950B00EC6309 /* LabelLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFB2CE285731BB009AF82D /* LabelLink.swift */; };
 		0D0F0A2628E88D9B0051AABC /* MoscowTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */; };
 		0D0F0A2728E891180051AABC /* BlockchainClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005E828E88CAD008A8CDD /* BlockchainClientTests.swift */; };
 		0D0F0A2828E8912A0051AABC /* BlockchainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */; };
@@ -38,6 +45,26 @@
 		0D43C0B228329C580002D25B /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFA28298C1F00868897 /* InputStream.swift */; };
 		0D43C0B328329C580002D25B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BFB28298C1F00868897 /* Data.swift */; };
 		0D4B8D1F285A02D8006ECD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
+		0D54C9B029A2982000BB7075 /* BitcoinWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C232283B91BB007B3F1B /* BitcoinWidgets.swift */; };
+		0D54C9B129A2982600BB7075 /* MempoolStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C236283B9237007B3F1B /* MempoolStatusWidget.swift */; };
+		0D54C9B229A2982600BB7075 /* MempoolStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C238283B9378007B3F1B /* MempoolStatusProvider.swift */; };
+		0D54C9B329A2982600BB7075 /* MempoolStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C239283B9378007B3F1B /* MempoolStatus.swift */; };
+		0D54C9B429A2982600BB7075 /* MempoolStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9C23A283B9378007B3F1B /* MempoolStatusView.swift */; };
+		0D54C9B529A2982B00BB7075 /* MoscowTimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F128E88CD9008A8CDD /* MoscowTimeWidget.swift */; };
+		0D54C9B629A2982B00BB7075 /* MoscowTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EF28E88CD9008A8CDD /* MoscowTimeProvider.swift */; };
+		0D54C9B729A2982B00BB7075 /* MoscowTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F028E88CD9008A8CDD /* MoscowTimeView.swift */; };
+		0D54C9B829A2983400BB7075 /* Configuration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0DB68DDA28D72FD500073E09 /* Configuration.intentdefinition */; };
+		0D54C9B929A2983900BB7075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BDC2829891900868897 /* Assets.xcassets */; };
+		0D54C9BA29A2984400BB7075 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC68E628D6EBD4001930BC /* Localizable.strings */; };
+		0D54C9BB29A2989200BB7075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
+		0D54C9BC29A298C000BB7075 /* MoscowTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */; };
+		0D54C9BD29A298C000BB7075 /* MoscowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005F228E88CD9008A8CDD /* MoscowTime.swift */; };
+		0D54C9BE29A2992700BB7075 /* BlockchainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */; };
+		0D54C9BF29A2992700BB7075 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EB28E88CAD008A8CDD /* Ticker.swift */; };
+		0D54C9C029A2993200BB7075 /* MempoolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC84283E105300F3DC08 /* MempoolClient.swift */; };
+		0D54C9C129A2993200BB7075 /* RecommendedFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */; };
+		0D54C9C229A29AF100BB7075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
+		0D54C9C329A29AF100BB7075 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC68EA28D6F39F001930BC /* Localizable.strings */; };
 		0D5D90082833BE06002A9C21 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90072833BE06002A9C21 /* DataTests.swift */; };
 		0D5D900A2833BFD9002A9C21 /* InputStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90092833BFD9002A9C21 /* InputStreamTests.swift */; };
 		0D5D900C2833C750002A9C21 /* NetworkAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D900B2833C750002A9C21 /* NetworkAddressTests.swift */; };
@@ -81,6 +108,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0D004CC929A293BC00EC6309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D960B992829888700868897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D004CBF29A293BA00EC6309;
+			remoteInfo = WidgetExtensionExtension;
+		};
+		0D004CD129A2943100EC6309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D960B992829888700868897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D004CAD29A2933700EC6309;
+			remoteInfo = "watchOS App";
+		};
 		0D0A975E282AFA3100D7DE06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D960B992829888700868897 /* Project object */;
@@ -105,6 +146,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0D004CCF29A293BC00EC6309 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0D004CCB29A293BC00EC6309 /* watchOS Widget Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D004CD329A2943100EC6309 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0D004CD029A2943100EC6309 /* Bitcoin Widgets.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D960BE72829891900868897 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -119,6 +182,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D004CAE29A2933700EC6309 /* Bitcoin Widgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitcoin Widgets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D004CC029A293BA00EC6309 /* watchOS Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchOS Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowTimeFormatter.swift; sourceTree = "<group>"; };
 		0D1BAC84283E105300F3DC08 /* MempoolClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolClient.swift; sourceTree = "<group>"; };
 		0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedFees.swift; sourceTree = "<group>"; };
@@ -186,6 +251,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D004CAB29A2933700EC6309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D004CBD29A293BA00EC6309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D004CC229A293BA00EC6309 /* SwiftUI.framework in Frameworks */,
+				0D004CC129A293BA00EC6309 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D960B9E2829888700868897 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +369,8 @@
 				0D960BA12829888700868897 /* BitcoinWidgets.app */,
 				0D960BB12829888800868897 /* Tests.xctest */,
 				0D960BD22829891800868897 /* iOS Widget Extension.appex */,
+				0D004CAE29A2933700EC6309 /* Bitcoin Widgets.app */,
+				0D004CC029A293BA00EC6309 /* watchOS Widget Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,6 +525,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D004CAD29A2933700EC6309 /* watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D004CBB29A2933800EC6309 /* Build configuration list for PBXNativeTarget "watchOS App" */;
+			buildPhases = (
+				0D004CAA29A2933700EC6309 /* Sources */,
+				0D004CAB29A2933700EC6309 /* Frameworks */,
+				0D004CAC29A2933700EC6309 /* Resources */,
+				0D004CCF29A293BC00EC6309 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D004CCA29A293BC00EC6309 /* PBXTargetDependency */,
+			);
+			name = "watchOS App";
+			productName = "WatchApp Watch App";
+			productReference = 0D004CAE29A2933700EC6309 /* Bitcoin Widgets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D004CBF29A293BA00EC6309 /* watchOS Widget Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D004CCC29A293BC00EC6309 /* Build configuration list for PBXNativeTarget "watchOS Widget Extension" */;
+			buildPhases = (
+				0D004CBC29A293BA00EC6309 /* Sources */,
+				0D004CBD29A293BA00EC6309 /* Frameworks */,
+				0D004CBE29A293BA00EC6309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchOS Widget Extension";
+			productName = WidgetExtensionExtension;
+			productReference = 0D004CC029A293BA00EC6309 /* watchOS Widget Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0D960BA02829888700868897 /* BitcoinWidgets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D960BC52829888800868897 /* Build configuration list for PBXNativeTarget "BitcoinWidgets" */;
@@ -450,11 +569,13 @@
 				0D960B9E2829888700868897 /* Frameworks */,
 				0D960B9F2829888700868897 /* Resources */,
 				0D960BE72829891900868897 /* Embed App Extensions */,
+				0D004CD329A2943100EC6309 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0D960BE22829891900868897 /* PBXTargetDependency */,
+				0D004CD229A2943100EC6309 /* PBXTargetDependency */,
 			);
 			name = BitcoinWidgets;
 			packageProductDependencies = (
@@ -510,9 +631,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					0D004CAD29A2933700EC6309 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0D004CBF29A293BA00EC6309 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					0D960BA02829888700868897 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -543,12 +670,33 @@
 			targets = (
 				0D960BA02829888700868897 /* BitcoinWidgets */,
 				0D960BD12829891800868897 /* iOS Widget Extension */,
+				0D004CAD29A2933700EC6309 /* watchOS App */,
+				0D004CBF29A293BA00EC6309 /* watchOS Widget Extension */,
 				0D960BB02829888800868897 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D004CAC29A2933700EC6309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D54C9C229A29AF100BB7075 /* Assets.xcassets in Resources */,
+				0D54C9C329A29AF100BB7075 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D004CBE29A293BA00EC6309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D54C9BB29A2989200BB7075 /* Assets.xcassets in Resources */,
+				0D54C9B929A2983900BB7075 /* Assets.xcassets in Resources */,
+				0D54C9BA29A2984400BB7075 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D960B9F2829888700868897 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,14 +718,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4B8D1F285A02D8006ECD80 /* Assets.xcassets in Resources */,
-				0DAC68E428D6EBD4001930BC /* Localizable.strings in Resources */,
 				0D960BDD2829891900868897 /* Assets.xcassets in Resources */,
+				0DAC68E428D6EBD4001930BC /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D004CAA29A2933700EC6309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D004CD429A2950600EC6309 /* BitcoinWidgetsApp.swift in Sources */,
+				0D004CD529A2950900EC6309 /* ContentView.swift in Sources */,
+				0D004CD629A2950B00EC6309 /* LabelLink.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D004CBC29A293BA00EC6309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D54C9BE29A2992700BB7075 /* BlockchainClient.swift in Sources */,
+				0D54C9BF29A2992700BB7075 /* Ticker.swift in Sources */,
+				0D54C9C029A2993200BB7075 /* MempoolClient.swift in Sources */,
+				0D54C9C129A2993200BB7075 /* RecommendedFees.swift in Sources */,
+				0D54C9B029A2982000BB7075 /* BitcoinWidgets.swift in Sources */,
+				0D54C9B329A2982600BB7075 /* MempoolStatus.swift in Sources */,
+				0D54C9B229A2982600BB7075 /* MempoolStatusProvider.swift in Sources */,
+				0D54C9B429A2982600BB7075 /* MempoolStatusView.swift in Sources */,
+				0D54C9B129A2982600BB7075 /* MempoolStatusWidget.swift in Sources */,
+				0D54C9BD29A298C000BB7075 /* MoscowTime.swift in Sources */,
+				0D54C9BC29A298C000BB7075 /* MoscowTimeFormatter.swift in Sources */,
+				0D54C9B629A2982B00BB7075 /* MoscowTimeProvider.swift in Sources */,
+				0D54C9B729A2982B00BB7075 /* MoscowTimeView.swift in Sources */,
+				0D54C9B529A2982B00BB7075 /* MoscowTimeWidget.swift in Sources */,
+				0D54C9B829A2983400BB7075 /* Configuration.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D960B9D2829888700868897 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,6 +845,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0D004CCA29A293BC00EC6309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D004CBF29A293BA00EC6309 /* watchOS Widget Extension */;
+			targetProxy = 0D004CC929A293BC00EC6309 /* PBXContainerItemProxy */;
+		};
+		0D004CD229A2943100EC6309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D004CAD29A2933700EC6309 /* watchOS App */;
+			targetProxy = 0D004CD129A2943100EC6309 /* PBXContainerItemProxy */;
+		};
 		0D0A975F282AFA3100D7DE06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0D960BD12829891800868897 /* iOS Widget Extension */;
@@ -713,6 +903,132 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D004CB929A2933800EC6309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = WatchIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U887FVM96;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cz.yanas.BitcoinWidgets;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.yanas.BitcoinWidgets.WatchApp;
+				PRODUCT_NAME = "Bitcoin Widgets";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0D004CBA29A2933800EC6309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = WatchIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U887FVM96;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cz.yanas.BitcoinWidgets;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.yanas.BitcoinWidgets.WatchApp;
+				PRODUCT_NAME = "Bitcoin Widgets";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		0D004CCD29A293BC00EC6309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U887FVM96;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.yanas.BitcoinWidgets.WatchApp.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0D004CCE29A293BC00EC6309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U887FVM96;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.yanas.BitcoinWidgets.WatchApp.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		0D960BC32829888800868897 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -992,6 +1308,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D004CBB29A2933800EC6309 /* Build configuration list for PBXNativeTarget "watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D004CB929A2933800EC6309 /* Debug */,
+				0D004CBA29A2933800EC6309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D004CCC29A293BC00EC6309 /* Build configuration list for PBXNativeTarget "watchOS Widget Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D004CCD29A293BC00EC6309 /* Debug */,
+				0D004CCE29A293BC00EC6309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0D960B9C2829888700868897 /* Build configuration list for PBXProject "BitcoinWidgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

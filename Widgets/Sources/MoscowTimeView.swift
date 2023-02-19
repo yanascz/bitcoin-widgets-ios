@@ -7,6 +7,9 @@ struct MoscowTimeView: View {
     var moscowTime: MoscowTimeProvider.Entry
 
     var body: some View {
+#if os(watchOS)
+        accessoryView(for: family)
+#else
         if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
             accessoryView(for: family)
         } else {
@@ -15,6 +18,7 @@ struct MoscowTimeView: View {
                 systemView(for: family)
             }
         }
+#endif
     }
 
     @available(iOSApplicationExtension 16.0, *)
@@ -33,6 +37,7 @@ struct MoscowTimeView: View {
         }
     }
 
+#if !os(watchOS)
     func systemView(for family: WidgetFamily) -> some View {
         HStack {
             VStack(alignment: .trailing) {
@@ -57,6 +62,7 @@ struct MoscowTimeView: View {
             }
         }
     }
+#endif
 
     private func moscowTime(for format: MoscowTimeFormat) -> MoscowTimeFormatter {
         let formatter = MoscowTimeFormatter();
@@ -80,6 +86,7 @@ struct MoscowTimeView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
+#if !os(watchOS)
             MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
             MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: false, format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
@@ -89,6 +96,7 @@ struct MoscowTimeView_Previews: PreviewProvider {
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
             MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: false, format: .plain, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
+#endif
 
             if #available(iOSApplicationExtension 16.0, *) {
                 MoscowTimeView(moscowTime: MoscowTime(showBitcoinLogo: true, format: .time, primaryPrice: 51229.50, primaryCurrencyCode: "USD", secondaryPrice: 43546.19, secondaryCurrencyCode: "EUR"))

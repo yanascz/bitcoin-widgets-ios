@@ -5,6 +5,11 @@ struct MempoolStatusProvider: IntentTimelineProvider {
 
     private let mempoolClient = MempoolClient()
 
+    @available(iOSApplicationExtension 16.0, watchOS 9.0, *)
+    func recommendations() -> [IntentRecommendation<MempoolConfigurationIntent>] {
+        return [IntentRecommendation(intent: MempoolConfigurationIntent(), description: "MempoolStatusWidget.displayName")]
+    }
+
     func placeholder(in context: Context) -> MempoolStatus {
         return MempoolStatus(showBitcoinLogo: true, blockHeight: 756569, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1)
     }

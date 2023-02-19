@@ -8,6 +8,9 @@ struct MempoolStatusView: View {
     var mempoolStatus: MempoolStatusProvider.Entry
 
     var body: some View {
+#if os(watchOS)
+        accessoryView(for: family)
+#else
         if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
             accessoryView(for: family)
         } else {
@@ -16,6 +19,7 @@ struct MempoolStatusView: View {
                 systemView(for: family)
             }
         }
+#endif
     }
 
     @available(iOSApplicationExtension 16.0, *)
@@ -42,6 +46,7 @@ struct MempoolStatusView: View {
         }
     }
 
+#if !os(watchOS)
     func systemView(for family: WidgetFamily) -> some View {
         VStack(alignment: family == .systemSmall ? .trailing : .center) {
             Text(String(mempoolStatus.blockHeight))
@@ -75,13 +80,14 @@ struct MempoolStatusView: View {
                 .padding(.trailing, family == .systemSmall ? 2 : 0)
         }.padding()
     }
-
+#endif
 }
 
 struct MempoolStatusView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
+#if !os(watchOS)
             MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
 
@@ -89,6 +95,7 @@ struct MempoolStatusView_Previews: PreviewProvider {
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
             MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: false, blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
+#endif
 
             if #available(iOSApplicationExtension 16.0, *) {
                 MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))

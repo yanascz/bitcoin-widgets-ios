@@ -1,5 +1,14 @@
 "ContentView.title" = "Bitcoin Widgets";
 "ContentView.AddTo.header" = "Add to";
+"ContentView.AddTo.WatchFace.link" = "Watch Face";
+"ContentView.AddTo.WatchFace.header" = "Add to Watch Face";
+"ContentView.AddTo.WatchFace.step1" = "Press the Digital Crown on your watch to go to the watch face.";
+"ContentView.AddTo.WatchFace.step2" = "Touch and hold the display.";
+"ContentView.AddTo.WatchFace.step3" = "Swipe left or right to choose a watch face, then tap Edit.";
+"ContentView.AddTo.WatchFace.step4" = "Swipe all the way to the left to edit complications, tap one to select it.";
+"ContentView.AddTo.WatchFace.step5" = "Look up Bitcoin Widgets, then tap the desired complication to select it.";
+"ContentView.AddTo.WatchFace.step6" = "Press the Digital Crown to save your changes.";
+"ContentView.AddTo.WatchFace.step7" = "Tap the watch face to set it as your current face.";
 "ContentView.AddTo.LockScreen.link" = "Lock Screen";
 "ContentView.AddTo.LockScreen.header" = "Add to Lock Screen";
 "ContentView.AddTo.LockScreen.step1" = "Touch and hold the Lock Screen until the Customize button appears at the bottom of the screen.";
