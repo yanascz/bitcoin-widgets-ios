@@ -37,7 +37,7 @@ struct ContentView: View {
                     systemImage: "ladybug.fill")
             }
             Section(header: Text("ContentView.Support.header").font(.title2)) {
-                LabelLink("widgets@yanas.cz", url: "lightning:widgets@yanas.cz", systemImage: "bolt.fill")
+                LabelLink("widgets@bitcoinwidgets.app", url: "lightning:widgets@bitcoinwidgets.app", systemImage: "bolt.fill")
             }
         }.navigationTitle("ContentView.title").listStyle(.plain)
     }
