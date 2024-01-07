@@ -12,4 +12,4 @@
 "CombinedStatusWidget.description" = "Sledujte stav svého Bitcoinového uzlu a prohlížeče mempool.space.";
 
 "MoscowTimeWidget.displayName" = "Moskevský čas";
-"MoscowTimeWidget.description" = "Sledujte aktuální Moskevský čas pro vybrané měny.";
+"MoscowTimeWidget.description" = "Sledujte aktuální Moskevský čas (sats za dolar) pro vybrané měny.";
