@@ -40,15 +40,12 @@ struct MempoolStatusView: View {
                     .font(.system(size: 37))
                 HStack {
                     Text(String(mempoolStatus.economyFee))
-                    Text("/")
-                        .foregroundColor(.secondary)
-                    Text(String(mempoolStatus.hourFee))
-                    Text("/")
-                        .foregroundColor(.secondary)
-                    Text(String(mempoolStatus.halfHourFee))
-                    Text("/")
-                        .foregroundColor(.secondary)
-                    Text(String(mempoolStatus.fastestFee))
+                    + Text(" / ").foregroundColor(.secondary)
+                    + Text(String(mempoolStatus.hourFee))
+                    + Text(" / ").foregroundColor(.secondary)
+                    + Text(String(mempoolStatus.halfHourFee))
+                    + Text(" / ").foregroundColor(.secondary)
+                    + Text(String(mempoolStatus.fastestFee))
                 }.font(.footnote).padding(.trailing, 2)
             }
         }
@@ -62,30 +59,19 @@ struct MempoolStatusView: View {
                 .foregroundColor(Color("MempoolColor"))
                 .padding(.bottom, 1)
             VStack(alignment: .trailing) {
-                HStack {
-                    Text(String(mempoolStatus.economyFee))
-                        .foregroundColor(.white)
-                    Text("/")
-                        .foregroundColor(.gray)
-                    Text(String(mempoolStatus.hourFee))
-                        .foregroundColor(.white)
-                    Text("/")
-                        .foregroundColor(.gray)
-                    Text(String(mempoolStatus.halfHourFee))
-                        .foregroundColor(.white)
-                    Text("/")
-                        .foregroundColor(.gray)
-                    Text(String(mempoolStatus.fastestFee))
-                        .foregroundColor(.white)
-                }
-                HStack {
-                    Text("MempoolStatusView.minimumFee")
-                        .foregroundColor(.gray)
-                    Text(String(mempoolStatus.minimumFee))
-                        .foregroundColor(.white)
-                }
+                Text(String(mempoolStatus.economyFee)).foregroundColor(.white)
+                + Text(" / ").foregroundColor(.gray)
+                + Text(String(mempoolStatus.hourFee)).foregroundColor(.white)
+                + Text(" / ").foregroundColor(.gray)
+                + Text(String(mempoolStatus.halfHourFee)).foregroundColor(.white)
+                + Text(" / ").foregroundColor(.gray)
+                + Text(String(mempoolStatus.fastestFee)).foregroundColor(.white)
+                Text("MempoolStatusView.minimumFee").foregroundColor(.gray)
+                + Text(" ")
+                + Text(String(mempoolStatus.minimumFee)).foregroundColor(.white)
             }.font(family == .systemSmall ? .footnote : .body)
                 .padding(.trailing, family == .systemSmall ? 2 : 0)
+                .multilineTextAlignment(.trailing)
         }
     }
 #endif
