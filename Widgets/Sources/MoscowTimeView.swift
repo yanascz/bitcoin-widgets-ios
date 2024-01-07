@@ -10,12 +10,20 @@ struct MoscowTimeView: View {
 #if os(watchOS)
         accessoryView(for: family)
 #else
-        if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
+        if #available(iOSApplicationExtension 17.0, *) {
+            if family == .accessoryRectangular || family == .accessoryInline {
+                accessoryView(for: family).containerBackground(for: .widget) {}
+            } else {
+                systemView(for: family).containerBackground(for: .widget) {
+                    BitcoinBackground(family: family, showLogo: moscowTime.showBitcoinLogo)
+                }
+            }
+        } else if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
             accessoryView(for: family)
         } else {
             ZStack {
                 BitcoinBackground(family: family, showLogo: moscowTime.showBitcoinLogo)
-                systemView(for: family)
+                systemView(for: family).padding()
             }
         }
 #endif
@@ -39,7 +47,7 @@ struct MoscowTimeView: View {
 
 #if !os(watchOS)
     func systemView(for family: WidgetFamily) -> some View {
-        HStack {
+        HStack(spacing: 42) {
             VStack(alignment: .trailing) {
                 Text(moscowTime.primaryPrice, formatter: moscowTime(for: moscowTime.format))
                     .font(.largeTitle)
@@ -48,7 +56,7 @@ struct MoscowTimeView: View {
                     .font(.body)
                     .foregroundColor(.gray)
                     .padding(.trailing, 2)
-            }.padding()
+            }
             if family == .systemMedium {
                 VStack(alignment: .trailing) {
                     Text(moscowTime.secondaryPrice, formatter: moscowTime(for: moscowTime.format))
@@ -58,7 +66,7 @@ struct MoscowTimeView: View {
                         .font(.body)
                         .foregroundColor(.gray)
                         .padding(.trailing, 2)
-                }.padding()
+                }
             }
         }
     }

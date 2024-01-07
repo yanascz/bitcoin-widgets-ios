@@ -8,12 +8,20 @@ struct NodeStatusView: View {
     var nodeStatus: NodeStatusProvider.Entry
 
     var body: some View {
-        if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
+        if #available(iOSApplicationExtension 17.0, *) {
+            if family == .accessoryRectangular || family == .accessoryInline {
+                accessoryView(for: family).containerBackground(for: .widget) {}
+            } else {
+                systemView(for: family).containerBackground(for: .widget) {
+                    BitcoinBackground(family: family, showLogo: nodeStatus.showBitcoinLogo)
+                }
+            }
+        } else if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
             accessoryView(for: family)
         } else {
             ZStack {
                 BitcoinBackground(family: family, showLogo: nodeStatus.showBitcoinLogo)
-                systemView(for: family)
+                systemView(for: family).padding()
             }
         }
     }
@@ -63,7 +71,7 @@ struct NodeStatusView: View {
                 Text(error.localizedDescription)
                     .foregroundColor(Color.white)
             }
-        }.padding()
+        }
     }
 
 }

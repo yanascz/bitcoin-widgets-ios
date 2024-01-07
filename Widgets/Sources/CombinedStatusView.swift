@@ -7,13 +7,24 @@ struct CombinedStatusView: View {
     var combinedStatus: CombinedStatusProvider.Entry
 
     var body: some View {
-        ZStack {
-            BitcoinBackground(family: .systemLarge, showLogo: combinedStatus.nodeStatus.showBitcoinLogo)
-            HStack {
+        if #available(iOSApplicationExtension 17.0, *) {
+            HStack(spacing: 42) {
                 NodeStatusView(nodeStatus: combinedStatus.nodeStatus)
                     .systemView(for: .systemSmall)
                 MempoolStatusView(mempoolStatus: combinedStatus.mempoolStatus)
                     .systemView(for: .systemSmall)
+            }.containerBackground(for: .widget) {
+                BitcoinBackground(family: .systemLarge, showLogo: combinedStatus.nodeStatus.showBitcoinLogo)
+            }
+        } else {
+            ZStack {
+                BitcoinBackground(family: .systemLarge, showLogo: combinedStatus.nodeStatus.showBitcoinLogo)
+                HStack {
+                    NodeStatusView(nodeStatus: combinedStatus.nodeStatus)
+                        .systemView(for: .systemSmall).padding()
+                    MempoolStatusView(mempoolStatus: combinedStatus.mempoolStatus)
+                        .systemView(for: .systemSmall).padding()
+                }
             }
         }
     }

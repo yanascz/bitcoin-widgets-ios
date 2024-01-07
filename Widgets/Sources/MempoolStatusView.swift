@@ -11,12 +11,20 @@ struct MempoolStatusView: View {
 #if os(watchOS)
         accessoryView(for: family)
 #else
-        if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
+        if #available(iOSApplicationExtension 17.0, *) {
+            if family == .accessoryRectangular || family == .accessoryInline {
+                accessoryView(for: family).containerBackground(for: .widget) {}
+            } else {
+                systemView(for: family).containerBackground(for: .widget) {
+                    BitcoinBackground(family: family, showLogo: mempoolStatus.showBitcoinLogo)
+                }
+            }
+        } else if #available(iOSApplicationExtension 16.0, *), family == .accessoryRectangular || family == .accessoryInline {
             accessoryView(for: family)
         } else {
             ZStack {
                 BitcoinBackground(family: family, showLogo: mempoolStatus.showBitcoinLogo)
-                systemView(for: family)
+                systemView(for: family).padding()
             }
         }
 #endif
@@ -78,7 +86,7 @@ struct MempoolStatusView: View {
                 }
             }.font(family == .systemSmall ? .footnote : .body)
                 .padding(.trailing, family == .systemSmall ? 2 : 0)
-        }.padding()
+        }
     }
 #endif
 }
