@@ -1,0 +1,603 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ContentView.AddTo.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidání"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.HomeScreen.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hlavní plocha"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Home Screen"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.HomeScreen.link" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na hlavní plochu"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.HomeScreen.step1" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na ploše stiskněte a podržte widget nebo prázdnou oblast, dokud se aplikace nezačnou chvět."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From the Home Screen, touch and hold a widget or an empty area until the apps jiggle."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.HomeScreen.step2" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepněte na „+“ v levém horním rohu displeje."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the Add button in the upper-left corner."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.HomeScreen.step3" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najděte Bitcoin Widgets, pak přejížděním doleva/doprava vyberte požadovaný widget a velikost."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look up Bitcoin Widgets, then choose desired widget and size."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.HomeScreen.step4" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepněte na „Přidat widget“, pak na „Hotovo“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap Add Widget, then tap Done."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uzamčená obrazovka"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Lock Screen"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.link" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na uzamčenou obrazovku"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lock Screen"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.step1" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stiskněte a podržte uzamčenou obrazovku, dokud se neobjeví tlačítko „Přizpůsobit“ u spodního okraje displeje."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch and hold the Lock Screen until the Customize button appears at the bottom of the screen."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.step2" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepněte na „Přizpůsobit“, pak klepněte na možnost „Uzamčená obrazovka“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the Customize button, then tap the Lock Screen option."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.step3" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepněte do oblasti nad nebo pod časem, kterou chcete přizpůsobit."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the box above or below the time you want to customize."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.step4" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najděte Bitcoin Widgets, pak klepnutím nebo přetažením přidejte požadované widgety."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look up Bitcoin Widgets, then tap or drag the widgets you want to add."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.LockScreen.step5" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřete nabídku widgetů, pak klepněte na „Hotovo“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close the widget popup, then tap Done."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.TodayView.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazení Dnes"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Today View"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.TodayView.link" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do zobrazení Dnes"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today View"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.TodayView.step1" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na ploše přejíždějte prstem doprava, dokud neuvidíte zobrazení Dnes."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From the Home Screen, swipe right to access the Today View."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.TodayView.step2" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejeďte dolů a klepněte na „Upravit“, pak klepněte na „+“ v levém horním rohu displeje."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scroll down and tap the Edit button, then tap the Add button in the upper-left corner."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.TodayView.step3" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najděte Bitcoin Widgets, pak přejížděním doleva/doprava vyberte požadovaný widget a velikost."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look up Bitcoin Widgets, then choose desired widget and size."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.TodayView.step4" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepněte na „Přidat widget“, pak na „Hotovo“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap Add Widget, then tap Done."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciferník hodinek"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Watch Face"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.link" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na ciferník hodinek"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch Face"
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step1" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stiskněte korunku Digital Crown na svých hodinkách pro zobrazení ciferníku."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press the Digital Crown on your watch to go to the watch face."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step2" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podržte prst na displeji s aktuálním ciferníkem, pak klepněte na „Upravit“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch and hold the display."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step3" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejížděním doleva/doprava vyberte ciferník, pak klepněte na „Upravit“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe left or right to choose a watch face, then tap Edit."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step4" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejeďte úplně doleva k editaci komplikací, klepnutím nějakou vyberte."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe all the way to the left to edit complications, tap one to select it."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step5" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najděte Bitcoin Widgets, klepnutím vyberte požadovanou komplikaci."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look up Bitcoin Widgets, then tap the desired complication to select it."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step6" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uložte změny stisknutím korunky Digital Crown."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press the Digital Crown to save your changes."
+          }
+        }
+      }
+    },
+    "ContentView.AddTo.WatchFace.step7" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepnutím na ciferník jej nastavte jako aktuální."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the watch face to set it as your current face."
+          }
+        }
+      }
+    },
+    "ContentView.Configure.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konfigurace"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configure"
+          }
+        }
+      }
+    },
+    "ContentView.Configure.step1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stisknutím a podržením widgetu otevřete nabídku rychlých akcí, pak klepněte na „Upravit widget“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch and hold a widget until menu appears, then tap Edit Widget."
+          }
+        }
+      }
+    },
+    "ContentView.Configure.step2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proveďte změny a dokončete je klepnutím mimo widget."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Provide required properties, then tap anywhere when done."
+          }
+        }
+      }
+    },
+    "ContentView.FindOutMore.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Další informace"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find out more"
+          }
+        }
+      }
+    },
+    "ContentView.FindOutMore.issueTracking" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hlášení chyb"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Issue tracking"
+          }
+        }
+      }
+    },
+    "ContentView.FindOutMore.sourceCode" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zdrojový kód"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source code"
+          }
+        }
+      }
+    },
+    "ContentView.Support.header" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podpora"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
+        }
+      }
+    },
+    "ContentView.title" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Widgets"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Widgets"
+          }
+        }
+      }
+    },
+    "widgets@bitcoinwidgets.app" : {
+
+    }
+  },
+  "version" : "1.0"
+}

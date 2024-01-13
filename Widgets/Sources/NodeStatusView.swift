@@ -35,9 +35,9 @@ struct NodeStatusView: View {
                 if family == .accessoryInline {
                     Label(String(blockHeight), systemImage: "bitcoinsign.square.fill")
                 } else {
-                    Text(String(blockHeight))
+                    Text(verbatim: String(blockHeight))
                         .font(.system(size: 37))
-                    Text("\(userAgent)\(String(protocolVersion))")
+                    Text(verbatim: "\(userAgent)\(protocolVersion)")
                         .font(.footnote)
                         .foregroundColor(.secondary)
                         .padding(.trailing, 2)
@@ -57,13 +57,13 @@ struct NodeStatusView: View {
             if let blockHeight = nodeStatus.blockHeight,
                let userAgent = nodeStatus.userAgent,
                let protocolVersion = nodeStatus.protocolVersion {
-                Text(String(blockHeight))
+                Text(verbatim: String(blockHeight))
                     .font(family == .systemSmall ? .title : .largeTitle)
                     .foregroundColor(Color("AccentColor"))
                     .padding(.bottom, 1)
                 VStack(alignment: .trailing) {
-                    Text(userAgent)
-                    Text("(\(String(protocolVersion)))")
+                    Text(verbatim: userAgent)
+                    Text(verbatim: "(\(protocolVersion))")
                 }.font(family == .systemSmall ? .footnote : .body)
                     .foregroundColor(.gray)
                     .padding(.trailing, family == .systemSmall ? 2 : 0)

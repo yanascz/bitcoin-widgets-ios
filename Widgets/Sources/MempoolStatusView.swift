@@ -4,6 +4,8 @@ import Intents
 
 struct MempoolStatusView: View {
 
+    private static let feeSeparator: String = " / "
+
     @Environment(\.widgetFamily) var family: WidgetFamily
     var mempoolStatus: MempoolStatusProvider.Entry
 
@@ -36,16 +38,16 @@ struct MempoolStatusView: View {
             if family == .accessoryInline {
                 Label(String(mempoolStatus.blockHeight), systemImage: "bitcoinsign.square.fill")
             } else {
-                Text(String(mempoolStatus.blockHeight))
+                Text(verbatim: String(mempoolStatus.blockHeight))
                     .font(.system(size: 37))
-                HStack {
-                    Text(String(mempoolStatus.economyFee))
-                    + Text(" / ").foregroundColor(.secondary)
-                    + Text(String(mempoolStatus.hourFee))
-                    + Text(" / ").foregroundColor(.secondary)
-                    + Text(String(mempoolStatus.halfHourFee))
-                    + Text(" / ").foregroundColor(.secondary)
-                    + Text(String(mempoolStatus.fastestFee))
+                VStack {
+                    Text(verbatim: String(mempoolStatus.economyFee))
+                    + Text(verbatim: Self.feeSeparator).foregroundColor(.secondary)
+                    + Text(verbatim: String(mempoolStatus.hourFee))
+                    + Text(verbatim: Self.feeSeparator).foregroundColor(.secondary)
+                    + Text(verbatim: String(mempoolStatus.halfHourFee))
+                    + Text(verbatim: Self.feeSeparator).foregroundColor(.secondary)
+                    + Text(verbatim: String(mempoolStatus.fastestFee))
                 }.font(.footnote).padding(.trailing, 2)
             }
         }
@@ -54,21 +56,21 @@ struct MempoolStatusView: View {
 #if !os(watchOS)
     func systemView(for family: WidgetFamily) -> some View {
         VStack(alignment: family == .systemSmall ? .trailing : .center) {
-            Text(String(mempoolStatus.blockHeight))
+            Text(verbatim: String(mempoolStatus.blockHeight))
                 .font(family == .systemSmall ? .title : .largeTitle)
                 .foregroundColor(Color("MempoolColor"))
                 .padding(.bottom, 1)
             VStack(alignment: .trailing) {
-                Text(String(mempoolStatus.economyFee)).foregroundColor(.white)
-                + Text(" / ").foregroundColor(.gray)
-                + Text(String(mempoolStatus.hourFee)).foregroundColor(.white)
-                + Text(" / ").foregroundColor(.gray)
-                + Text(String(mempoolStatus.halfHourFee)).foregroundColor(.white)
-                + Text(" / ").foregroundColor(.gray)
-                + Text(String(mempoolStatus.fastestFee)).foregroundColor(.white)
+                Text(verbatim: String(mempoolStatus.economyFee)).foregroundColor(.white)
+                + Text(verbatim: Self.feeSeparator).foregroundColor(.gray)
+                + Text(verbatim: String(mempoolStatus.hourFee)).foregroundColor(.white)
+                + Text(verbatim: Self.feeSeparator).foregroundColor(.gray)
+                + Text(verbatim: String(mempoolStatus.halfHourFee)).foregroundColor(.white)
+                + Text(verbatim: Self.feeSeparator).foregroundColor(.gray)
+                + Text(verbatim: String(mempoolStatus.fastestFee)).foregroundColor(.white)
                 Text("MempoolStatusView.minimumFee").foregroundColor(.gray)
-                + Text(" ")
-                + Text(String(mempoolStatus.minimumFee)).foregroundColor(.white)
+                + Text(verbatim: " ")
+                + Text(verbatim: String(mempoolStatus.minimumFee)).foregroundColor(.white)
             }.font(family == .systemSmall ? .footnote : .body)
                 .padding(.trailing, family == .systemSmall ? 2 : 0)
                 .multilineTextAlignment(.trailing)

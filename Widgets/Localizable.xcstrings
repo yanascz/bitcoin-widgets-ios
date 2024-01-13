@@ -1,0 +1,188 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CombinedStatusWidget.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte stav svého Bitcoinového uzlu a prohlížeče mempool.space."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See status of your full node and mempool.space Bitcoin explorer."
+          }
+        }
+      }
+    },
+    "CombinedStatusWidget.displayName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kombinovaný stav"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Combined Status"
+          }
+        }
+      }
+    },
+    "MempoolStatusView.minimumFee" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minimum"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minimum"
+          }
+        }
+      }
+    },
+    "MempoolStatusWidget.description" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte stav Bitcoinového prohlížeče mempool.space."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See status of mempool.space Bitcoin explorer."
+          }
+        }
+      }
+    },
+    "MempoolStatusWidget.displayName" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stav mempool.space"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool Status"
+          }
+        }
+      }
+    },
+    "MoscowTimeWidget.description" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte aktuální Moskevský čas (sats za dolar) pro vybrané měny."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See current Moscow Time (sats per dollar) for selected currencies."
+          }
+        }
+      }
+    },
+    "MoscowTimeWidget.displayName" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moskevský čas"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moscow Time"
+          }
+        }
+      }
+    },
+    "NodeStatus.Error.configurationRequired" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proveďte konfiguraci"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuration required"
+          }
+        }
+      }
+    },
+    "NodeStatus.Error.nodeUnreachable" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uzel je nedostupný"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Node unreachable"
+          }
+        }
+      }
+    },
+    "NodeStatusWidget.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte stav svého Bitcoinového uzlu."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See status of your full node."
+          }
+        }
+      }
+    },
+    "NodeStatusWidget.displayName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stav uzlu"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Node Status"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
