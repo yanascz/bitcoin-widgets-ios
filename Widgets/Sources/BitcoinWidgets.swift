@@ -14,6 +14,7 @@ struct BitcoinWidgets: WidgetBundle {
         CombinedStatusWidget()
 #endif
         MoscowTimeWidget()
+        HalvingCountdownWidget()
     }
 
 }

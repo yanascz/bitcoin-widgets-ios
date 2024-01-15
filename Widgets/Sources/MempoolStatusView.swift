@@ -86,6 +86,8 @@ struct MempoolStatusView_Previews: PreviewProvider {
 #if !os(watchOS)
             MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 17, halfHourFee: 8, hourFee: 3, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
+            MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: false, blockHeight: 755237, fastestFee: 2791, halfHourFee: 730, hourFee: 130, economyFee: 37, minimumFee: 19))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
 
             MempoolStatusView(mempoolStatus: MempoolStatus(showBitcoinLogo: true, blockHeight: 755237, fastestFee: 1, halfHourFee: 1, hourFee: 1, economyFee: 1, minimumFee: 1))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))

@@ -9,6 +9,13 @@ class MempoolClientTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(blockHeight, 755237)
     }
 
+    func testGetBlockHeightByDate() async throws {
+        let client = MempoolClient()
+        let blockHeight = try await client.getBlockHeightByDate(Date())
+
+        XCTAssertGreaterThanOrEqual(blockHeight, 826153)
+    }
+
     func testGetRecommendedFees() async throws {
         let client = MempoolClient()
         let recommendedFees = try await client.getRecommendedFees()

@@ -35,6 +35,38 @@
         }
       }
     },
+    "HalvingCountdownWidget.description" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte odpočet do nadcházejícího půlení."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See countdown to the upcoming halving."
+          }
+        }
+      }
+    },
+    "HalvingCountdownWidget.displayName" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odpočet půlení"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halving Countdown"
+          }
+        }
+      }
+    },
     "MempoolStatusView.minimumFee" : {
       "localizations" : {
         "cs" : {

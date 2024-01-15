@@ -45,9 +45,9 @@ struct MoscowTimeProvider: IntentTimelineProvider {
         return MoscowTime(
             showBitcoinLogo: Bool(truncating: configuration.showBitcoinLogo ?? true),
             format: configuration.format,
-            primaryPrice: tickers[primaryCurrencyCode]!.last as NSNumber,
+            primaryPrice: NSNumber(value: tickers[primaryCurrencyCode]!.last),
             primaryCurrencyCode: primaryCurrencyCode,
-            secondaryPrice: tickers[secondaryCurrencyCode]!.last as NSNumber,
+            secondaryPrice: NSNumber(value: tickers[secondaryCurrencyCode]!.last),
             secondaryCurrencyCode: secondaryCurrencyCode
         )
     }

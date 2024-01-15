@@ -76,6 +76,14 @@
 		0D91B3542B53151400C0FFE0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0D91B3522B53151400C0FFE0 /* Localizable.xcstrings */; };
 		0D91B3562B53151400C0FFE0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0D91B3552B53151400C0FFE0 /* Localizable.xcstrings */; };
 		0D91B3572B53151400C0FFE0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0D91B3552B53151400C0FFE0 /* Localizable.xcstrings */; };
+		0D91B35B2B53196B00C0FFE0 /* HalvingCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B3582B53196B00C0FFE0 /* HalvingCountdownView.swift */; };
+		0D91B35C2B53196B00C0FFE0 /* HalvingCountdownProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B3592B53196B00C0FFE0 /* HalvingCountdownProvider.swift */; };
+		0D91B35D2B53196B00C0FFE0 /* HalvingCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B35A2B53196B00C0FFE0 /* HalvingCountdown.swift */; };
+		0D91B35F2B53211200C0FFE0 /* HalvingCountdownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B35E2B53211200C0FFE0 /* HalvingCountdownWidget.swift */; };
+		0D91B3602B53211200C0FFE0 /* HalvingCountdownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B35E2B53211200C0FFE0 /* HalvingCountdownWidget.swift */; };
+		0D91B3612B5321F100C0FFE0 /* HalvingCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B35A2B53196B00C0FFE0 /* HalvingCountdown.swift */; };
+		0D91B3622B5321F500C0FFE0 /* HalvingCountdownProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B3592B53196B00C0FFE0 /* HalvingCountdownProvider.swift */; };
+		0D91B3632B5321F700C0FFE0 /* HalvingCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91B3582B53196B00C0FFE0 /* HalvingCountdownView.swift */; };
 		0D960BA52829888700868897 /* BitcoinWidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */; };
 		0D960BA72829888700868897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D960BA62829888700868897 /* ContentView.swift */; };
 		0D960BA92829888800868897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
@@ -212,6 +220,10 @@
 		0D75326628E8822800776552 /* BitcoinBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinBackground.swift; sourceTree = "<group>"; };
 		0D91B3522B53151400C0FFE0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		0D91B3552B53151400C0FFE0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		0D91B3582B53196B00C0FFE0 /* HalvingCountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalvingCountdownView.swift; sourceTree = "<group>"; };
+		0D91B3592B53196B00C0FFE0 /* HalvingCountdownProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalvingCountdownProvider.swift; sourceTree = "<group>"; };
+		0D91B35A2B53196B00C0FFE0 /* HalvingCountdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalvingCountdown.swift; sourceTree = "<group>"; };
+		0D91B35E2B53211200C0FFE0 /* HalvingCountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalvingCountdownWidget.swift; sourceTree = "<group>"; };
 		0D960BA12829888700868897 /* BitcoinWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D960BA42829888700868897 /* BitcoinWidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWidgetsApp.swift; sourceTree = "<group>"; };
 		0D960BA62829888700868897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -503,6 +515,10 @@
 				0D1BAC94283EC5B100F3DC08 /* CombinedStatusProvider.swift */,
 				0D1BAC97283EC7DA00F3DC08 /* CombinedStatusView.swift */,
 				0D1BAC992840021C00F3DC08 /* CombinedStatusWidget.swift */,
+				0D91B35A2B53196B00C0FFE0 /* HalvingCountdown.swift */,
+				0D91B3592B53196B00C0FFE0 /* HalvingCountdownProvider.swift */,
+				0D91B3582B53196B00C0FFE0 /* HalvingCountdownView.swift */,
+				0D91B35E2B53211200C0FFE0 /* HalvingCountdownWidget.swift */,
 				0DE9C239283B9378007B3F1B /* MempoolStatus.swift */,
 				0DE9C238283B9378007B3F1B /* MempoolStatusProvider.swift */,
 				0DE9C23A283B9378007B3F1B /* MempoolStatusView.swift */,
@@ -741,11 +757,15 @@
 				0D54C9BE29A2992700BB7075 /* BlockchainClient.swift in Sources */,
 				0D54C9BF29A2992700BB7075 /* Ticker.swift in Sources */,
 				0D54C9C029A2993200BB7075 /* MempoolClient.swift in Sources */,
+				0D91B3612B5321F100C0FFE0 /* HalvingCountdown.swift in Sources */,
 				0D54C9C129A2993200BB7075 /* RecommendedFees.swift in Sources */,
 				0D54C9B029A2982000BB7075 /* BitcoinWidgets.swift in Sources */,
+				0D91B3602B53211200C0FFE0 /* HalvingCountdownWidget.swift in Sources */,
+				0D91B3632B5321F700C0FFE0 /* HalvingCountdownView.swift in Sources */,
 				0D54C9B329A2982600BB7075 /* MempoolStatus.swift in Sources */,
 				0D54C9B229A2982600BB7075 /* MempoolStatusProvider.swift in Sources */,
 				0D54C9B429A2982600BB7075 /* MempoolStatusView.swift in Sources */,
+				0D91B3622B5321F500C0FFE0 /* HalvingCountdownProvider.swift in Sources */,
 				0D54C9B129A2982600BB7075 /* MempoolStatusWidget.swift in Sources */,
 				0D54C9BD29A298C000BB7075 /* MoscowTime.swift in Sources */,
 				0D54C9BC29A298C000BB7075 /* MoscowTimeFormatter.swift in Sources */,
@@ -805,6 +825,7 @@
 				0D960BF828298BC400868897 /* BitcoinClient.swift in Sources */,
 				0D5D90132833E8BE002A9C21 /* MagicNumber.swift in Sources */,
 				0D960BF728298BC400868897 /* MessageHeader.swift in Sources */,
+				0D91B35F2B53211200C0FFE0 /* HalvingCountdownWidget.swift in Sources */,
 				0D960BF628298BC400868897 /* NetworkAddress.swift in Sources */,
 				0D960BF928298BC400868897 /* VersionMessage.swift in Sources */,
 				0D960BFD28298C1F00868897 /* Data.swift in Sources */,
@@ -817,12 +838,14 @@
 				0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */,
 				0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */,
 				0D1BAC8F283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */,
+				0D91B35D2B53196B00C0FFE0 /* HalvingCountdown.swift in Sources */,
 				0D75326728E8822800776552 /* BitcoinBackground.swift in Sources */,
 				0DE9C235283B91CE007B3F1B /* BitcoinWidgets.swift in Sources */,
 				0D1BAC92283EC50100F3DC08 /* CombinedStatus.swift in Sources */,
 				0D1BAC96283EC5BD00F3DC08 /* CombinedStatusProvider.swift in Sources */,
 				0D1BAC98283EC7DA00F3DC08 /* CombinedStatusView.swift in Sources */,
 				0D1BAC9A2840021C00F3DC08 /* CombinedStatusWidget.swift in Sources */,
+				0D91B35C2B53196B00C0FFE0 /* HalvingCountdownProvider.swift in Sources */,
 				0DC54974283B971B000D9994 /* MempoolStatus.swift in Sources */,
 				0DC54975283B972A000D9994 /* MempoolStatusProvider.swift in Sources */,
 				0DC54976283B9744000D9994 /* MempoolStatusView.swift in Sources */,
@@ -832,6 +855,7 @@
 				0D3005F328E88CDA008A8CDD /* MoscowTimeProvider.swift in Sources */,
 				0D3005F428E88CDA008A8CDD /* MoscowTimeView.swift in Sources */,
 				0D3005F528E88CDA008A8CDD /* MoscowTimeWidget.swift in Sources */,
+				0D91B35B2B53196B00C0FFE0 /* HalvingCountdownView.swift in Sources */,
 				0D960BED28298B3600868897 /* NodeStatus.swift in Sources */,
 				0D960BEE28298B3600868897 /* NodeStatusProvider.swift in Sources */,
 				0D960BEF28298B3600868897 /* NodeStatusView.swift in Sources */,
