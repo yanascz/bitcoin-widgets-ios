@@ -109,7 +109,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D004CBF29A293BA00EC6309"
             BuildableName = "watchOS Widget Extension.appex"
-            BlueprintName = "watchOS Widget Extension"
             ReferencedContainer = "container:BitcoinWidgets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

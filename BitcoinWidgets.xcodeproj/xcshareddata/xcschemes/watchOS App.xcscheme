@@ -59,7 +59,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D004CAD29A2933700EC6309"
             BuildableName = "Bitcoin Widgets.app"
-            BlueprintName = "watchOS App"
             ReferencedContainer = "container:BitcoinWidgets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +75,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D004CAD29A2933700EC6309"
             BuildableName = "Bitcoin Widgets.app"
-            BlueprintName = "watchOS App"
             ReferencedContainer = "container:BitcoinWidgets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
