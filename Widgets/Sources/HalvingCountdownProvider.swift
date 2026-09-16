@@ -21,13 +21,13 @@ struct HalvingCountdownProvider: IntentTimelineProvider {
             return
         }
 
-        Task.init {
+        _ = Task.init {
             completion(try await getHalvingCountdown(showBitcoinLogo: configuration.showBitcoinLogo))
         }
     }
 
     func getTimeline(for configuration: MempoolConfigurationIntent, in context: Context, completion: @escaping (Timeline<HalvingCountdown>) -> ()) {
-        Task.init {
+        _ = Task.init {
             let halvingCountdown = try await getHalvingCountdown(showBitcoinLogo: configuration.showBitcoinLogo)
             let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
             completion(Timeline(entries: [halvingCountdown], policy: .after(nextUpdate)))

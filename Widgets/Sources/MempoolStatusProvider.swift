@@ -20,13 +20,13 @@ struct MempoolStatusProvider: IntentTimelineProvider {
             return
         }
 
-        Task.init {
+        _ = Task.init {
             completion(try await getMempoolStatus(showBitcoinLogo: configuration.showBitcoinLogo))
         }
     }
 
     func getTimeline(for configuration: MempoolConfigurationIntent, in context: Context, completion: @escaping (Timeline<MempoolStatus>) -> ()) {
-        Task.init {
+        _ = Task.init {
             let mempoolStatus = try await getMempoolStatus(showBitcoinLogo: configuration.showBitcoinLogo)
             let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
             completion(Timeline(entries: [mempoolStatus], policy: .after(nextUpdate)))

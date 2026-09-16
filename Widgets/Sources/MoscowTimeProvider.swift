@@ -24,13 +24,13 @@ struct MoscowTimeProvider: IntentTimelineProvider {
             return
         }
 
-        Task.init {
+        _ = Task.init {
             completion(try await getMoscowTime(for: configuration))
         }
     }
 
     func getTimeline(for configuration: MoscowTimeConfigurationIntent, in context: Context, completion: @escaping (Timeline<MoscowTime>) -> ()) {
-        Task.init {
+        _ = Task.init {
             let moscowTime = try await getMoscowTime(for: configuration)
             let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
             completion(Timeline(entries: [moscowTime], policy: .after(nextUpdate)))

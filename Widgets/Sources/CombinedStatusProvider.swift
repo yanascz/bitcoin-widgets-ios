@@ -19,13 +19,13 @@ struct CombinedStatusProvider: IntentTimelineProvider {
             return
         }
 
-        Task.init {
+        _ = Task.init {
             completion(try await getCombinedStatus(for: configuration))
         }
     }
 
     func getTimeline(for configuration: NodeConfigurationIntent, in context: Context, completion: @escaping (Timeline<CombinedStatus>) -> ()) {
-        Task.init {
+        _ = Task.init {
             let combinedStatus = try await getCombinedStatus(for: configuration)
             let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
             completion(Timeline(entries: [combinedStatus], policy: .after(nextUpdate)))
