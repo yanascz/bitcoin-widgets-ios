@@ -35,16 +35,16 @@ struct MempoolStatusProvider: IntentTimelineProvider {
 
     func getMempoolStatus(showBitcoinLogo: NSNumber?) async throws -> MempoolStatus {
         let blockHeight = try await mempoolClient.getBlockHeight()
-        let recommendedFees = try await mempoolClient.getRecommendedFees()
+        let preciseFees = try await mempoolClient.getPreciseFees()
 
         return MempoolStatus(
             showBitcoinLogo: Bool(truncating: showBitcoinLogo ?? true),
             blockHeight: blockHeight,
-            fastestFee: recommendedFees.fastestFee,
-            halfHourFee: recommendedFees.halfHourFee,
-            hourFee: recommendedFees.hourFee,
-            economyFee: recommendedFees.economyFee,
-            minimumFee: recommendedFees.minimumFee
+            fastestFee: preciseFees.fastestFee,
+            halfHourFee: preciseFees.halfHourFee,
+            hourFee: preciseFees.hourFee,
+            economyFee: preciseFees.economyFee,
+            minimumFee: preciseFees.minimumFee
         )
     }
 

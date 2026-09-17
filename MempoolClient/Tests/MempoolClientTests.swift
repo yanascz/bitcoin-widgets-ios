@@ -16,15 +16,15 @@ class MempoolClientTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(blockHeight, 826153)
     }
 
-    func testGetRecommendedFees() async throws {
+    func testGetPreciseFees() async throws {
         let client = MempoolClient()
-        let recommendedFees = try await client.getRecommendedFees()
+        let preciseFees = try await client.getPreciseFees()
 
-        XCTAssertGreaterThanOrEqual(recommendedFees.fastestFee, 1)
-        XCTAssertGreaterThanOrEqual(recommendedFees.halfHourFee, 1)
-        XCTAssertGreaterThanOrEqual(recommendedFees.hourFee, 1)
-        XCTAssertGreaterThanOrEqual(recommendedFees.economyFee, 1)
-        XCTAssertGreaterThanOrEqual(recommendedFees.minimumFee, 1)
+        XCTAssertGreaterThanOrEqual(preciseFees.fastestFee, 0.1)
+        XCTAssertGreaterThanOrEqual(preciseFees.halfHourFee, 0.1)
+        XCTAssertGreaterThanOrEqual(preciseFees.hourFee, 0.1)
+        XCTAssertGreaterThanOrEqual(preciseFees.economyFee, 0.1)
+        XCTAssertGreaterThanOrEqual(preciseFees.minimumFee, 0.1)
     }
 
 }

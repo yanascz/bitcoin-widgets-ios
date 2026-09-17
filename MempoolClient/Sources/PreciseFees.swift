@@ -1,15 +1,9 @@
 import Foundation
-import WidgetKit
 
-struct MempoolStatus: TimelineEntry {
-
-    let date: Date = Date()
-    let showBitcoinLogo: Bool
-    let blockHeight: Int32
+struct PreciseFees: Decodable {
     let fastestFee: Double
     let halfHourFee: Double
     let hourFee: Double
     let economyFee: Double
     let minimumFee: Double
-
 }

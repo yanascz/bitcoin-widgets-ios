@@ -21,8 +21,8 @@
 		0D1BAC8B283E1EB600F3DC08 /* MempoolClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC89283E1E4F00F3DC08 /* MempoolClientTests.swift */; };
 		0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC84283E105300F3DC08 /* MempoolClient.swift */; };
 		0D1BAC8D283E1EC600F3DC08 /* MempoolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC84283E105300F3DC08 /* MempoolClient.swift */; };
-		0D1BAC8E283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */; };
-		0D1BAC8F283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */; };
+		0D1BAC8E283E1ECA00F3DC08 /* PreciseFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* PreciseFees.swift */; };
+		0D1BAC8F283E1ECA00F3DC08 /* PreciseFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* PreciseFees.swift */; };
 		0D1BAC92283EC50100F3DC08 /* CombinedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC90283EC49400F3DC08 /* CombinedStatus.swift */; };
 		0D1BAC96283EC5BD00F3DC08 /* CombinedStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC94283EC5B100F3DC08 /* CombinedStatusProvider.swift */; };
 		0D1BAC98283EC7DA00F3DC08 /* CombinedStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC97283EC7DA00F3DC08 /* CombinedStatusView.swift */; };
@@ -34,6 +34,8 @@
 		0D1BACA72844D6FB00F3DC08 /* CheckNodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BACA52844D6FB00F3DC08 /* CheckNodeResponse.swift */; };
 		0D1BACA92844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BACA82844DC2E00F3DC08 /* NodeStatusResponse.swift */; };
 		0D1BACAA2844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BACA82844DC2E00F3DC08 /* NodeStatusResponse.swift */; };
+		0D1EA9CB305C3CEF007404C6 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EA9CA305C3CEC007404C6 /* Text.swift */; };
+		0D1EA9CC305C3CEF007404C6 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EA9CA305C3CEC007404C6 /* Text.swift */; };
 		0D3005ED28E88CAD008A8CDD /* BlockchainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */; };
 		0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EB28E88CAD008A8CDD /* Ticker.swift */; };
 		0D3005F328E88CDA008A8CDD /* MoscowTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EF28E88CD9008A8CDD /* MoscowTimeProvider.swift */; };
@@ -61,7 +63,7 @@
 		0D54C9BE29A2992700BB7075 /* BlockchainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */; };
 		0D54C9BF29A2992700BB7075 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3005EB28E88CAD008A8CDD /* Ticker.swift */; };
 		0D54C9C029A2993200BB7075 /* MempoolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC84283E105300F3DC08 /* MempoolClient.swift */; };
-		0D54C9C129A2993200BB7075 /* RecommendedFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */; };
+		0D54C9C129A2993200BB7075 /* PreciseFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BAC86283E111600F3DC08 /* PreciseFees.swift */; };
 		0D54C9C229A29AF100BB7075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D960BA82829888800868897 /* Assets.xcassets */; };
 		0D5D90082833BE06002A9C21 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90072833BE06002A9C21 /* DataTests.swift */; };
 		0D5D900A2833BFD9002A9C21 /* InputStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D90092833BFD9002A9C21 /* InputStreamTests.swift */; };
@@ -194,7 +196,7 @@
 		0D004CC029A293BA00EC6309 /* watchOS Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchOS Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0F0A2528E88D9B0051AABC /* MoscowTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowTimeFormatter.swift; sourceTree = "<group>"; };
 		0D1BAC84283E105300F3DC08 /* MempoolClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolClient.swift; sourceTree = "<group>"; };
-		0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedFees.swift; sourceTree = "<group>"; };
+		0D1BAC86283E111600F3DC08 /* PreciseFees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciseFees.swift; sourceTree = "<group>"; };
 		0D1BAC89283E1E4F00F3DC08 /* MempoolClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolClientTests.swift; sourceTree = "<group>"; };
 		0D1BAC90283EC49400F3DC08 /* CombinedStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedStatus.swift; sourceTree = "<group>"; };
 		0D1BAC94283EC5B100F3DC08 /* CombinedStatusProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedStatusProvider.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		0D1BACA12844D4FF00F3DC08 /* BitnodesClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitnodesClientTests.swift; sourceTree = "<group>"; };
 		0D1BACA52844D6FB00F3DC08 /* CheckNodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNodeResponse.swift; sourceTree = "<group>"; };
 		0D1BACA82844DC2E00F3DC08 /* NodeStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStatusResponse.swift; sourceTree = "<group>"; };
+		0D1EA9CA305C3CEC007404C6 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		0D3005E828E88CAD008A8CDD /* BlockchainClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainClientTests.swift; sourceTree = "<group>"; };
 		0D3005EA28E88CAD008A8CDD /* BlockchainClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainClient.swift; sourceTree = "<group>"; };
 		0D3005EB28E88CAD008A8CDD /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
@@ -319,6 +322,14 @@
 				0DEFB2C62855FFB0009AF82D /* Tests */,
 			);
 			path = BitnodesClient;
+			sourceTree = "<group>";
+		};
+		0D1EA9C9305B2971007404C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D1EA9CA305C3CEC007404C6 /* Text.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0D3005E628E88CAD008A8CDD /* BlockchainClient */ = {
@@ -493,7 +504,7 @@
 			isa = PBXGroup;
 			children = (
 				0D1BAC84283E105300F3DC08 /* MempoolClient.swift */,
-				0D1BAC86283E111600F3DC08 /* RecommendedFees.swift */,
+				0D1BAC86283E111600F3DC08 /* PreciseFees.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -509,6 +520,7 @@
 		0DEFB2C928560002009AF82D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0D1EA9C9305B2971007404C6 /* Extensions */,
 				0D75326628E8822800776552 /* BitcoinBackground.swift */,
 				0DE9C232283B91BB007B3F1B /* BitcoinWidgets.swift */,
 				0D1BAC90283EC49400F3DC08 /* CombinedStatus.swift */,
@@ -758,11 +770,12 @@
 				0D54C9BF29A2992700BB7075 /* Ticker.swift in Sources */,
 				0D54C9C029A2993200BB7075 /* MempoolClient.swift in Sources */,
 				0D91B3612B5321F100C0FFE0 /* HalvingCountdown.swift in Sources */,
-				0D54C9C129A2993200BB7075 /* RecommendedFees.swift in Sources */,
+				0D54C9C129A2993200BB7075 /* PreciseFees.swift in Sources */,
 				0D54C9B029A2982000BB7075 /* BitcoinWidgets.swift in Sources */,
 				0D91B3602B53211200C0FFE0 /* HalvingCountdownWidget.swift in Sources */,
 				0D91B3632B5321F700C0FFE0 /* HalvingCountdownView.swift in Sources */,
 				0D54C9B329A2982600BB7075 /* MempoolStatus.swift in Sources */,
+				0D1EA9CB305C3CEF007404C6 /* Text.swift in Sources */,
 				0D54C9B229A2982600BB7075 /* MempoolStatusProvider.swift in Sources */,
 				0D54C9B429A2982600BB7075 /* MempoolStatusView.swift in Sources */,
 				0D91B3622B5321F500C0FFE0 /* HalvingCountdownProvider.swift in Sources */,
@@ -803,7 +816,7 @@
 				0D1BAC8D283E1EC600F3DC08 /* MempoolClient.swift in Sources */,
 				0D43C0B228329C580002D25B /* InputStream.swift in Sources */,
 				0D1BACA92844DC2E00F3DC08 /* NodeStatusResponse.swift in Sources */,
-				0D1BAC8E283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */,
+				0D1BAC8E283E1ECA00F3DC08 /* PreciseFees.swift in Sources */,
 				0D1BAC8B283E1EB600F3DC08 /* MempoolClientTests.swift in Sources */,
 				0DE9C230283B8B5A007B3F1B /* BitcoinClient.swift in Sources */,
 				0DE9C22F283B8A55007B3F1B /* BitcoinClientTests.swift in Sources */,
@@ -837,7 +850,8 @@
 				0D3005ED28E88CAD008A8CDD /* BlockchainClient.swift in Sources */,
 				0D3005EE28E88CAD008A8CDD /* Ticker.swift in Sources */,
 				0D1BAC8C283E1EC000F3DC08 /* MempoolClient.swift in Sources */,
-				0D1BAC8F283E1ECA00F3DC08 /* RecommendedFees.swift in Sources */,
+				0D1EA9CC305C3CEF007404C6 /* Text.swift in Sources */,
+				0D1BAC8F283E1ECA00F3DC08 /* PreciseFees.swift in Sources */,
 				0D91B35D2B53196B00C0FFE0 /* HalvingCountdown.swift in Sources */,
 				0D75326728E8822800776552 /* BitcoinBackground.swift in Sources */,
 				0DE9C235283B91CE007B3F1B /* BitcoinWidgets.swift in Sources */,

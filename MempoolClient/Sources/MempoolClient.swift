@@ -28,11 +28,11 @@ class MempoolClient {
         return blockInfo.height
     }
 
-    func getRecommendedFees() async throws -> RecommendedFees {
-        let recommendedFeesUrl = Self.baseUrl.appendingPathComponent("/v1/fees/recommended")
-        let (data, _) = try await urlSession.data(from: recommendedFeesUrl)
+    func getPreciseFees() async throws -> PreciseFees {
+        let preciseFeesUrl = Self.baseUrl.appendingPathComponent("/v1/fees/precise")
+        let (data, _) = try await urlSession.data(from: preciseFeesUrl)
 
-        return try decoder.decode(RecommendedFees.self, from: data)
+        return try decoder.decode(PreciseFees.self, from: data)
     }
 
 }
